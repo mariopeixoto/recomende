@@ -16,12 +16,12 @@
 		<intercept-url pattern="/signin*"
 			access="IS_AUTHENTICATED_ANONYMOUSLY" />
 		<intercept-url pattern="/**" access="ROLE_USER" />
-		<form-login login-page='/signin' default-target-url="/home" />
+		<form-login login-page='/signin' default-target-url="/home" authentication-failure-url="/signin?error=true"/>
 		<logout logout-url="/signout"/>
 	</http>
 	
 	<authentication-manager>
-		<authentication-provider user-service-ref='loginService'>
+		<authentication-provider user-service-ref='signService'>
 			<password-encoder hash="sha"/>
 		</authentication-provider>
 	</authentication-manager>

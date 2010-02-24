@@ -1,4 +1,4 @@
-package br.recomende.model.controller.login;
+package br.recomende.infra.auth;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataAccessException;
@@ -9,13 +9,13 @@ import org.springframework.stereotype.Service;
 
 import br.recomende.model.repository.UserRepository;
 
-@Service("loginService")
-public class LoginService implements UserDetailsService {
+@Service("signService")
+public class SignService implements UserDetailsService {
 	
 	private UserRepository userRepository;
 	
 	@Autowired
-	public LoginService(UserRepository userRepository) {
+	public SignService(UserRepository userRepository) {
 		this.userRepository = userRepository;
 	}
 
