@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="1.0" xmlns="http://java.sun.com/xml/ns/persistence">
+	<persistence-unit name="pgUnit">
+		<provider>org.hibernate.ejb.HibernatePersistence</provider>
+		<properties>
+			<property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect"/>
+			<property name="hibernate.connection.driver_class" value="org.postgresql.Driver"/>
+			<property name="hibernate.connection.url" value="jdbc:postgresql://localhost:5432/recomende"/>
+			<property name="hibernate.connection.username" value="postgres"/>
+			<property name="hibernate.connection.password" value="123456"/>
+			<!-- Schema generation -->
+			<property name="hibernate.hbm2ddl.auto" value="update"/>
+			
+			<!-- Indexing configs -->
+			<property name="hibernate.search.default.directory_provider" value="org.hibernate.search.store.FSDirectoryProvider"/>
+			<property name="hibernate.search.default.indexBase" value="/tmp/lucene/indexes"/>
+		
+			<!-- Debug Configuration -->
+			<property name="hibernate.show_sql" value="true"/>
+			<!--<property name="format_sql" value="true"/>-->
+			<property name="hibernate.use_sql_comments" value="true"/>
+		</properties>
+	</persistence-unit>
+</persistence>

@@ -1,0 +1,39 @@
+<record>
+<header>
+<identifier>oai:CiteSeerPSU:1</identifier>
+<datestamp>1993-08-11</datestamp>
+<setSpec>CiteSeerPSUset</setSpec>
+</header>
+<metadata>
+<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc ="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+   <dc:title>36 Problems for Semantic Interpretation</dc:title>
+   <dc:creator>Gabriele Scheler</dc:creator>
+   <dc:subject>Gabriele Scheler 36 Problems for Semantic Interpretation</dc:subject>
+   <dc:description>This paper presents a collection of problems for natural language analysis
+derived mainly from theoretical linguistics. Most of these problems
+present major obstacles for computational systems of language interpretation.
+The set of given sentences can easily be scaled up by introducing more
+examples per problem. The construction of computational systems could
+benefit from such a collection, either using it directly for training and
+testing or as a set of benchmarks to qualify the performance of a NLP
+system.
+1 Introduction
+The main part of this paper consists of a collection of problems for semantic
+analysis of natural language. The problems are arranged in the following way:
+example sentences
+concise description of the problem
+keyword for the type of problem
+The sources (first appearance in print) of the sentences have been left out,
+because they are sometimes hard to track and will usually not be of much use,
+as they indicate a starting-point of discussion only. The keywords howeve...</dc:description>
+   <dc:contributor>The Pennsylvania State University CiteSeer Archives</dc:contributor>
+   <dc:publisher>unknown</dc:publisher>
+   <dc:date>1993-08-11</dc:date>
+   <dc:format>ps</dc:format>
+   <dc:identifier>http://citeseer.ist.psu.edu/1.html</dc:identifier>
+   <dc:source>ftp://flop.informatik.tu-muenchen.de/pub/fki/fki-179-93.ps.gz</dc:source>
+   <dc:language>en</dc:language>
+   <dc:rights>unrestricted</dc:rights>
+</oai_dc:dc>
+</metadata>
+</record>

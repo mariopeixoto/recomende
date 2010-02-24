@@ -1,0 +1,1129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<OAI-PMH xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/ http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd">
+
+<responseDate>2009-11-09T06:30:07Z</responseDate>
+<request verb="ListRecords" metadataPrefix="oai_dc"></request>
+
+<ListRecords>
+<record>
+<header>
+<identifier>BIBLIOS-NET:1</identifier>
+<datestamp>2008-09-29T13:41:32Z</datestamp>
+<setSpec>ALL</setSpec>
+</header>
+<metadata>
+<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+<dc:title xmlns:dc="http://purl.org/dc/elements/1.1/">Botanical materia medica and pharmacology; drugs considered from a botanical, pharmaceutical, physiological, therapeutical and toxicological standpoint.</dc:title>
+<dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">
+    Aurand, Samuel Herbert,
+    1854-
+  </dc:creator>
+<dc:type xmlns:dc="http://purl.org/dc/elements/1.1/">text</dc:type>
+<dc:publisher xmlns:dc="http://purl.org/dc/elements/1.1/">Chicago, P. H. Mallen Company,</dc:publisher>
+<dc:date xmlns:dc="http://purl.org/dc/elements/1.1/">1899.</dc:date>
+<dc:language xmlns:dc="http://purl.org/dc/elements/1.1/">eng</dc:language>
+<dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Botany, Medical.</dc:subject>
+<dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Homeopathy</dc:subject>
+<dc:identifier xmlns:dc="http://purl.org/dc/elements/1.1/">https://bws.biblios.net/bib/1</dc:identifier></oai_dc:dc>
+</metadata>
+</record>
+<record>
+<header>
+<identifier>BIBLIOS-NET:2</identifier>
+<datestamp>2008-09-29T13:41:32Z</datestamp>
+<setSpec>ALL</setSpec>
+</header>
+<metadata>
+<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+<dc:title xmlns:dc="http://purl.org/dc/elements/1.1/">Personal rights and the domestic relations /</dc:title>
+<dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">
+    Chadman, Charles E.
+    (Charles Erehart),
+    b. 1873.
+  </dc:creator>
+<dc:type xmlns:dc="http://purl.org/dc/elements/1.1/">text</dc:type>
+<dc:publisher xmlns:dc="http://purl.org/dc/elements/1.1/">Conneaut, OH : Home Study Pub. Co.,</dc:publisher>
+<dc:date xmlns:dc="http://purl.org/dc/elements/1.1/">1899.</dc:date>
+<dc:language xmlns:dc="http://purl.org/dc/elements/1.1/">eng</dc:language>
+<dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Persons (Law)</dc:subject>
+<dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Domestic relations</dc:subject>
+<dc:identifier xmlns:dc="http://purl.org/dc/elements/1.1/">https://bws.biblios.net/bib/2</dc:identifier></oai_dc:dc>
+</metadata>
+</record>
+<record>
+<header>
+<identifier>BIBLIOS-NET:3</identifier>
+<datestamp>2008-09-29T13:41:32Z</datestamp>
+<setSpec>ALL</setSpec>
+</header>
+<metadata>
+<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+<dc:title xmlns:dc="http://purl.org/dc/elements/1.1/">The sky pilot; a tale of the foothills,</dc:title>
+<dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">
+    Connor, Ralph,
+    1860-1937.
+  </dc:creator>
+<dc:type xmlns:dc="http://purl.org/dc/elements/1.1/">text</dc:type>
+<dc:publisher xmlns:dc="http://purl.org/dc/elements/1.1/">Chicago, New York [etc] F. H. Revell company,</dc:publisher>
+<dc:date xmlns:dc="http://purl.org/dc/elements/1.1/">1899.</dc:date>
+<dc:language xmlns:dc="http://purl.org/dc/elements/1.1/">eng</dc:language>
+<dc:identifier xmlns:dc="http://purl.org/dc/elements/1.1/">https://bws.biblios.net/bib/3</dc:identifier></oai_dc:dc>
+</metadata>
+</record>
+<record>
+<header>
+<identifier>BIBLIOS-NET:4</identifier>
+<datestamp>2008-09-29T13:41:32Z</datestamp>
+<setSpec>ALL</setSpec>
+</header>
+<metadata>
+<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+<dc:title xmlns:dc="http://purl.org/dc/elements/1.1/">The martyrs' idyl, and shorter poems,</dc:title>
+<dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">
+    Guiney, Louise Imogen,
+    1861-1920.
+  </dc:creator>
+<dc:type xmlns:dc="http://purl.org/dc/elements/1.1/">text</dc:type>
+<dc:publisher xmlns:dc="http://purl.org/dc/elements/1.1/">Boston, New York, Houghton, Mifflin and Company,</dc:publisher>
+<dc:date xmlns:dc="http://purl.org/dc/elements/1.1/">1899.</dc:date>
+<dc:language xmlns:dc="http://purl.org/dc/elements/1.1/">eng</dc:language>
+<dc:identifier xmlns:dc="http://purl.org/dc/elements/1.1/">https://bws.biblios.net/bib/4</dc:identifier></oai_dc:dc>
+</metadata>
+</record>
+<record>
+<header>
+<identifier>BIBLIOS-NET:5</identifier>
+<datestamp>2008-09-29T13:41:32Z</datestamp>
+<setSpec>ALL</setSpec>
+</header>
+<metadata>
+<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+<dc:title xmlns:dc="http://purl.org/dc/elements/1.1/">Their silver wedding journey /</dc:title>
+<dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">
+    Howells, William Dean,
+    1837-1920.
+  </dc:creator>
+<dc:type xmlns:dc="http://purl.org/dc/elements/1.1/">text</dc:type>
+<dc:publisher xmlns:dc="http://purl.org/dc/elements/1.1/">New York : Harper,</dc:publisher>
+<dc:date xmlns:dc="http://purl.org/dc/elements/1.1/">1899.</dc:date>
+<dc:language xmlns:dc="http://purl.org/dc/elements/1.1/">eng</dc:language>
+<dc:identifier xmlns:dc="http://purl.org/dc/elements/1.1/">https://bws.biblios.net/bib/5</dc:identifier></oai_dc:dc>
+</metadata>
+</record>
+<record>
+<header>
+<identifier>BIBLIOS-NET:7</identifier>
+<datestamp>2008-09-29T13:41:32Z</datestamp>
+<setSpec>ALL</setSpec>
+</header>
+<metadata>
+<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+<dc:title xmlns:dc="http://purl.org/dc/elements/1.1/">The complete geography.</dc:title>
+<dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">
+    Tarbell, H. S.
+    (Horace Sumner),
+    1838-1904.
+  </dc:creator>
+<dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">
+    Tarbell, Martha,
+    joint author.
+  </dc:creator>
+<dc:type xmlns:dc="http://purl.org/dc/elements/1.1/">text</dc:type>
+<dc:publisher xmlns:dc="http://purl.org/dc/elements/1.1/">New York, Chicago [etc.] Werner School Book Co.</dc:publisher>
+<dc:date xmlns:dc="http://purl.org/dc/elements/1.1/">[1899]</dc:date>
+<dc:language xmlns:dc="http://purl.org/dc/elements/1.1/">eng</dc:language>
+<dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Geography.</dc:subject>
+<dc:identifier xmlns:dc="http://purl.org/dc/elements/1.1/">https://bws.biblios.net/bib/7</dc:identifier></oai_dc:dc>
+</metadata>
+</record>
+<record>
+<header>
+<identifier>BIBLIOS-NET:8</identifier>
+<datestamp>2008-09-29T13:41:32Z</datestamp>
+<setSpec>ALL</setSpec>
+</header>
+<metadata>
+<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+<dc:title xmlns:dc="http://purl.org/dc/elements/1.1/">The poems of Celia Thaxter.</dc:title>
+<dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">
+    Thaxter, Celia,
+    1835-1894.
+  </dc:creator>
+<dc:type xmlns:dc="http://purl.org/dc/elements/1.1/">text</dc:type>
+<dc:publisher xmlns:dc="http://purl.org/dc/elements/1.1/">Boston, New York, Houghton, Mifflin and company,</dc:publisher>
+<dc:date xmlns:dc="http://purl.org/dc/elements/1.1/">1899.</dc:date>
+<dc:language xmlns:dc="http://purl.org/dc/elements/1.1/">eng</dc:language>
+<dc:identifier xmlns:dc="http://purl.org/dc/elements/1.1/">https://bws.biblios.net/bib/8</dc:identifier></oai_dc:dc>
+</metadata>
+</record>
+<record>
+<header>
+<identifier>BIBLIOS-NET:9</identifier>
+<datestamp>2008-09-29T13:41:32Z</datestamp>
+<setSpec>ALL</setSpec>
+</header>
+<metadata>
+<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+<dc:title xmlns:dc="http://purl.org/dc/elements/1.1/">The successful man of business,</dc:title>
+<dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">
+    Wood, Benjamin,
+    1865-
+  </dc:creator>
+<dc:type xmlns:dc="http://purl.org/dc/elements/1.1/">text</dc:type>
+<dc:publisher xmlns:dc="http://purl.org/dc/elements/1.1/">New York, Brentano,</dc:publisher>
+<dc:date xmlns:dc="http://purl.org/dc/elements/1.1/">1899.</dc:date>
+<dc:language xmlns:dc="http://purl.org/dc/elements/1.1/">eng</dc:language>
+<dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Success.</dc:subject>
+<dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Businessmen.</dc:subject>
+<dc:identifier xmlns:dc="http://purl.org/dc/elements/1.1/">https://bws.biblios.net/bib/9</dc:identifier></oai_dc:dc>
+</metadata>
+</record>
+<record>
+<header>
+<identifier>BIBLIOS-NET:10</identifier>
+<datestamp>2008-09-29T13:41:32Z</datestamp>
+<setSpec>ALL</setSpec>
+</header>
+<metadata>
+<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+<dc:title xmlns:dc="http://purl.org/dc/elements/1.1/">A treatise on the civil and criminal jurisdiction of justices of the peace, and the powers and duties of constables in executing process in the state of Wisconsin.</dc:title>
+<dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">
+    Bryant, Edwin E.
+    (Edwin Eustace),
+    1835-1903.
+  </dc:creator>
+<dc:type xmlns:dc="http://purl.org/dc/elements/1.1/">text</dc:type>
+<dc:publisher xmlns:dc="http://purl.org/dc/elements/1.1/">Chicago, Callaghan &amp; Co.,</dc:publisher>
+<dc:date xmlns:dc="http://purl.org/dc/elements/1.1/">1899.</dc:date>
+<dc:language xmlns:dc="http://purl.org/dc/elements/1.1/">eng</dc:language>
+<dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Justices of the peace</dc:subject>
+<dc:identifier xmlns:dc="http://purl.org/dc/elements/1.1/">https://bws.biblios.net/bib/10</dc:identifier></oai_dc:dc>
+</metadata>
+</record>
+<record>
+<header>
+<identifier>BIBLIOS-NET:11</identifier>
+<datestamp>2008-09-29T13:41:32Z</datestamp>
+<setSpec>ALL</setSpec>
+</header>
+<metadata>
+<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+<dc:title xmlns:dc="http://purl.org/dc/elements/1.1/">A catalogue of the best books in every department of literature; with complete author, subject, and title index.</dc:title>
+<dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">
+    Burrows Brothers Company, Cleveland.
+  </dc:creator>
+<dc:type xmlns:dc="http://purl.org/dc/elements/1.1/">text</dc:type>
+<dc:publisher xmlns:dc="http://purl.org/dc/elements/1.1/">Cleveland, The Burrows brothers company</dc:publisher>
+<dc:date xmlns:dc="http://purl.org/dc/elements/1.1/">[1899]</dc:date>
+<dc:language xmlns:dc="http://purl.org/dc/elements/1.1/">eng</dc:language>
+<dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Catalogs, Booksellers'</dc:subject>
+<dc:identifier xmlns:dc="http://purl.org/dc/elements/1.1/">https://bws.biblios.net/bib/11</dc:identifier></oai_dc:dc>
+</metadata>
+</record>
+<record>
+<header>
+<identifier>BIBLIOS-NET:13</identifier>
+<datestamp>2008-09-29T13:41:33Z</datestamp>
+<setSpec>ALL</setSpec>
+</header>
+<metadata>
+<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+<dc:title xmlns:dc="http://purl.org/dc/elements/1.1/">A century of science and other essays,</dc:title>
+<dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">
+    Fiske, John,
+    1842-1901.
+  </dc:creator>
+<dc:type xmlns:dc="http://purl.org/dc/elements/1.1/">text</dc:type>
+<dc:publisher xmlns:dc="http://purl.org/dc/elements/1.1/">Boston, New York, Houghton Mifflin co.,</dc:publisher>
+<dc:date xmlns:dc="http://purl.org/dc/elements/1.1/">1899.</dc:date>
+<dc:language xmlns:dc="http://purl.org/dc/elements/1.1/">eng</dc:language>
+<dc:description xmlns:dc="http://purl.org/dc/elements/1.1/">Century of science.--Doctrine of evolution; its scope and purport.--Edward Livingston Youmans.--Part played by infancy in the evolution of man.--Origins of liberal thought in America.--Sir Harry Vane.--Arbitration treaty.--Francis Parkman.--Edward Augustus Freeman.--Cambridge as village and city.--Harvest of Irish folk-lore.--Guessing at half and multiplying by two.--Forty years of Bacon Shakespearefully.--Some cranks and their crochets.</dc:description>
+<dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Youmans, Edward Livingston, 1821-1887</dc:subject>
+<dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Vane, Henry, Sir, 1612?-1662.</dc:subject>
+<dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Parkman, Francis, 1823-1893.</dc:subject>
+<dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Freeman, Edward Augustus, 1823-1892</dc:subject>
+<dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Shakespeare, William, 1564-1616.</dc:subject>
+<dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Cook, Joseph, 1838-1901.</dc:subject>
+<dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Science</dc:subject>
+<dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Evolution.</dc:subject>
+<dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Arbitration, International.</dc:subject>
+<dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Folklore</dc:subject>
+<dc:identifier xmlns:dc="http://purl.org/dc/elements/1.1/">https://bws.biblios.net/bib/13</dc:identifier></oai_dc:dc>
+</metadata>
+</record>
+<record>
+<header>
+<identifier>BIBLIOS-NET:14</identifier>
+<datestamp>2008-09-29T13:41:33Z</datestamp>
+<setSpec>ALL</setSpec>
+</header>
+<metadata>
+<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+<dc:title xmlns:dc="http://purl.org/dc/elements/1.1/">Vassar stories,</dc:title>
+<dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">
+    Gallaher, Grace Margaret.
+  </dc:creator>
+<dc:type xmlns:dc="http://purl.org/dc/elements/1.1/">text</dc:type>
+<dc:publisher xmlns:dc="http://purl.org/dc/elements/1.1/">Boston, R. G. Badger &amp; co.,</dc:publisher>
+<dc:date xmlns:dc="http://purl.org/dc/elements/1.1/">1900.</dc:date>
+<dc:language xmlns:dc="http://purl.org/dc/elements/1.1/">eng</dc:language>
+<dc:description xmlns:dc="http://purl.org/dc/elements/1.1/">--In the matter of room-mates.--The moulders of public opinion.--Her position.--A sense of obligation.--Neither a lender nor a borrower be.--The clan.--At the first game.--On baccalaureate Sunday.</dc:description>
+<dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Vassar College</dc:subject>
+<dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Women college students</dc:subject>
+<dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">College stories, American.</dc:subject>
+<dc:identifier xmlns:dc="http://purl.org/dc/elements/1.1/">https://bws.biblios.net/bib/14</dc:identifier></oai_dc:dc>
+</metadata>
+</record>
+<record>
+<header>
+<identifier>BIBLIOS-NET:15</identifier>
+<datestamp>2008-09-29T13:41:33Z</datestamp>
+<setSpec>ALL</setSpec>
+</header>
+<metadata>
+<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+<dc:title xmlns:dc="http://purl.org/dc/elements/1.1/">Comparative statistical tables and charts of the commerce of the world /</dc:title>
+<dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">
+    Harper, William,
+    1861-1930.
+  </dc:creator>
+<dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">
+    Commercial Museum (Philadelphia, Pa.)
+  </dc:creator>
+<dc:type xmlns:dc="http://purl.org/dc/elements/1.1/">text</dc:type>
+<dc:publisher xmlns:dc="http://purl.org/dc/elements/1.1/">Philadelphia : Commercial Museum,</dc:publisher>
+<dc:date xmlns:dc="http://purl.org/dc/elements/1.1/">1899.</dc:date>
+<dc:language xmlns:dc="http://purl.org/dc/elements/1.1/">eng</dc:language>
+<dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Commercial statistics.</dc:subject>
+<dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Commerce</dc:subject>
+<dc:identifier xmlns:dc="http://purl.org/dc/elements/1.1/">https://bws.biblios.net/bib/15</dc:identifier></oai_dc:dc>
+</metadata>
+</record>
+<record>
+<header>
+<identifier>BIBLIOS-NET:16</identifier>
+<datestamp>2008-09-29T13:41:33Z</datestamp>
+<setSpec>ALL</setSpec>
+</header>
+<metadata>
+<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+<dc:title xmlns:dc="http://purl.org/dc/elements/1.1/">Songs of the Lakes and other poems.</dc:title>
+<dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">
+    Horn, Louise McCloy.
+  </dc:creator>
+<dc:type xmlns:dc="http://purl.org/dc/elements/1.1/">text</dc:type>
+<dc:publisher xmlns:dc="http://purl.org/dc/elements/1.1/">Cincinnati, The Editor publishing co.,</dc:publisher>
+<dc:date xmlns:dc="http://purl.org/dc/elements/1.1/">1899.</dc:date>
+<dc:language xmlns:dc="http://purl.org/dc/elements/1.1/">eng</dc:language>
+<dc:identifier xmlns:dc="http://purl.org/dc/elements/1.1/">https://bws.biblios.net/bib/16</dc:identifier></oai_dc:dc>
+</metadata>
+</record>
+<record>
+<header>
+<identifier>BIBLIOS-NET:17</identifier>
+<datestamp>2008-09-29T13:41:33Z</datestamp>
+<setSpec>ALL</setSpec>
+</header>
+<metadata>
+<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+<dc:title xmlns:dc="http://purl.org/dc/elements/1.1/">Reminiscences, 1819-1899,</dc:title>
+<dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">
+    Howe, Julia Ward,
+    1819-1910.
+  </dc:creator>
+<dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">
+    Catt, Carrie Chapman,
+    1859-1947,
+    former owner.
+    DLC
+  </dc:creator>
+<dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">
+    National American Woman Suffrage Association Collection (Library of Congress)
+    DLC
+  </dc:creator>
+<dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">
+    Shapiro Bruce Rogers Collection (Library of Congress)
+    DLC
+  </dc:creator>
+<dc:type xmlns:dc="http://purl.org/dc/elements/1.1/">text</dc:type>
+<dc:publisher xmlns:dc="http://purl.org/dc/elements/1.1/">Boston and New York, Houghton, Mifflin, and company,</dc:publisher>
+<dc:date xmlns:dc="http://purl.org/dc/elements/1.1/">1899.</dc:date>
+<dc:language xmlns:dc="http://purl.org/dc/elements/1.1/">eng</dc:language>
+<dc:relation xmlns:dc="http://purl.org/dc/elements/1.1/">A digital reproduction is available from the Open Collections Program at Harvard University, Women and work collection.</dc:relation>
+<dc:identifier xmlns:dc="http://purl.org/dc/elements/1.1/">http://nrs.harvard.edu/urn-3:FHCL:452603</dc:identifier>
+<dc:identifier xmlns:dc="http://purl.org/dc/elements/1.1/">https://bws.biblios.net/bib/17</dc:identifier></oai_dc:dc>
+</metadata>
+</record>
+<record>
+<header>
+<identifier>BIBLIOS-NET:18</identifier>
+<datestamp>2008-09-29T13:41:33Z</datestamp>
+<setSpec>ALL</setSpec>
+</header>
+<metadata>
+<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+<dc:title xmlns:dc="http://purl.org/dc/elements/1.1/">The treatise on metal mining, prepared for students of the International Correspondence Schools, Scranton, Pa. ...</dc:title>
+<dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">
+    International Correspondence Schools
+  </dc:creator>
+<dc:type xmlns:dc="http://purl.org/dc/elements/1.1/">text</dc:type>
+<dc:publisher xmlns:dc="http://purl.org/dc/elements/1.1/">Scranton, The Colliery Engineer Co.,</dc:publisher>
+<dc:date xmlns:dc="http://purl.org/dc/elements/1.1/">1899.</dc:date>
+<dc:language xmlns:dc="http://purl.org/dc/elements/1.1/">eng</dc:language>
+<dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Mining engineering.</dc:subject>
+<dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Mines and mineral resources.</dc:subject>
+<dc:identifier xmlns:dc="http://purl.org/dc/elements/1.1/">https://bws.biblios.net/bib/18</dc:identifier></oai_dc:dc>
+</metadata>
+</record>
+<record>
+<header>
+<identifier>BIBLIOS-NET:19</identifier>
+<datestamp>2008-09-29T13:41:33Z</datestamp>
+<setSpec>ALL</setSpec>
+</header>
+<metadata>
+<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+<dc:title xmlns:dc="http://purl.org/dc/elements/1.1/">The queen's twin, and other stories,</dc:title>
+<dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">
+    Jewett, Sarah Orne,
+    1849-1909.
+  </dc:creator>
+<dc:type xmlns:dc="http://purl.org/dc/elements/1.1/">text</dc:type>
+<dc:publisher xmlns:dc="http://purl.org/dc/elements/1.1/">Boston, New York, Houghton, Mifflin and Company,</dc:publisher>
+<dc:date xmlns:dc="http://purl.org/dc/elements/1.1/">1899.</dc:date>
+<dc:language xmlns:dc="http://purl.org/dc/elements/1.1/">eng</dc:language>
+<dc:description xmlns:dc="http://purl.org/dc/elements/1.1/">The queen's twin.--A Dunnet shepherdess.--Where's Nora?--Bold words at the bridge.--Martha's lady.--The coon dog.--Aunt Cynthy Dallett.--The night before Thanksgiving.</dc:description>
+<dc:identifier xmlns:dc="http://purl.org/dc/elements/1.1/">https://bws.biblios.net/bib/19</dc:identifier></oai_dc:dc>
+</metadata>
+</record>
+<record>
+<header>
+<identifier>BIBLIOS-NET:20</identifier>
+<datestamp>2008-09-29T13:41:33Z</datestamp>
+<setSpec>ALL</setSpec>
+</header>
+<metadata>
+<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+<dc:title xmlns:dc="http://purl.org/dc/elements/1.1/">Recollections of my mother, Mrs. Anne Jean Lyman, of Northampton : being a picture of domestic and social life in New England in the first half of the nineteenth century /</dc:title>
+<dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">
+    Lesley, Susan I.
+    (Susan Inches),
+    1823-1904.
+  </dc:creator>
+<dc:type xmlns:dc="http://purl.org/dc/elements/1.1/">text</dc:type>
+<dc:publisher xmlns:dc="http://purl.org/dc/elements/1.1/">Boston : Houghton, Mifflin,</dc:publisher>
+<dc:date xmlns:dc="http://purl.org/dc/elements/1.1/">1899.</dc:date>
+<dc:language xmlns:dc="http://purl.org/dc/elements/1.1/">eng</dc:language>
+<dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Lyman, Anne Jean, 1789-1867.</dc:subject>
+<dc:identifier xmlns:dc="http://purl.org/dc/elements/1.1/">https://bws.biblios.net/bib/20</dc:identifier></oai_dc:dc>
+</metadata>
+</record>
+<record>
+<header>
+<identifier>BIBLIOS-NET:21</identifier>
+<datestamp>2008-09-29T13:41:33Z</datestamp>
+<setSpec>ALL</setSpec>
+</header>
+<metadata>
+<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+<dc:title xmlns:dc="http://purl.org/dc/elements/1.1/">Civil procedure at common law.</dc:title>
+<dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">
+    Martin, Alexander,
+    1833-1902. [from old catalog]
+  </dc:creator>
+<dc:type xmlns:dc="http://purl.org/dc/elements/1.1/">text</dc:type>
+<dc:publisher xmlns:dc="http://purl.org/dc/elements/1.1/">Boston, The Boston book company,</dc:publisher>
+<dc:date xmlns:dc="http://purl.org/dc/elements/1.1/">1899.</dc:date>
+<dc:language xmlns:dc="http://purl.org/dc/elements/1.1/">eng</dc:language>
+<dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Civil procedure</dc:subject>
+<dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Pleading</dc:subject>
+<dc:identifier xmlns:dc="http://purl.org/dc/elements/1.1/">https://bws.biblios.net/bib/21</dc:identifier></oai_dc:dc>
+</metadata>
+</record>
+<record>
+<header>
+<identifier>BIBLIOS-NET:22</identifier>
+<datestamp>2008-09-29T13:41:33Z</datestamp>
+<setSpec>ALL</setSpec>
+</header>
+<metadata>
+<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+<dc:title xmlns:dc="http://purl.org/dc/elements/1.1/">A new history of the United States. The greater republic;</dc:title>
+<dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">
+    Morris, Charles,
+    1833-1922.
+  </dc:creator>
+<dc:type xmlns:dc="http://purl.org/dc/elements/1.1/">text</dc:type>
+<dc:publisher xmlns:dc="http://purl.org/dc/elements/1.1/">Philadelphia, Chicago [etc.] J. C. Winston &amp; co.,</dc:publisher>
+<dc:date xmlns:dc="http://purl.org/dc/elements/1.1/">1899.</dc:date>
+<dc:language xmlns:dc="http://purl.org/dc/elements/1.1/">eng</dc:language>
+<dc:identifier xmlns:dc="http://purl.org/dc/elements/1.1/">https://bws.biblios.net/bib/22</dc:identifier></oai_dc:dc>
+</metadata>
+</record>
+<record>
+<header>
+<identifier>BIBLIOS-NET:23</identifier>
+<datestamp>2008-09-29T13:41:33Z</datestamp>
+<setSpec>ALL</setSpec>
+</header>
+<metadata>
+<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+<dc:title xmlns:dc="http://purl.org/dc/elements/1.1/">Personal reminiscences of the anti-slavery and other reforms and reformers.</dc:title>
+<dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">
+    Powell, Aaron M.
+    (Aaron Macy),
+    1832-1899.
+  </dc:creator>
+<dc:type xmlns:dc="http://purl.org/dc/elements/1.1/">text</dc:type>
+<dc:publisher xmlns:dc="http://purl.org/dc/elements/1.1/">Plainfield, N.J., A. R. Powell; New York, Caulon press,</dc:publisher>
+<dc:date xmlns:dc="http://purl.org/dc/elements/1.1/">1899.</dc:date>
+<dc:language xmlns:dc="http://purl.org/dc/elements/1.1/">eng</dc:language>
+<dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Antislavery movements</dc:subject>
+<dc:identifier xmlns:dc="http://purl.org/dc/elements/1.1/">https://bws.biblios.net/bib/23</dc:identifier></oai_dc:dc>
+</metadata>
+</record>
+<record>
+<header>
+<identifier>BIBLIOS-NET:24</identifier>
+<datestamp>2008-09-29T13:41:33Z</datestamp>
+<setSpec>ALL</setSpec>
+</header>
+<metadata>
+<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+<dc:title xmlns:dc="http://purl.org/dc/elements/1.1/">Through unexplored Asia,</dc:title>
+<dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">
+    Reid, William Jameson.
+  </dc:creator>
+<dc:type xmlns:dc="http://purl.org/dc/elements/1.1/">text</dc:type>
+<dc:publisher xmlns:dc="http://purl.org/dc/elements/1.1/">Boston, D. Estes &amp; Company</dc:publisher>
+<dc:date xmlns:dc="http://purl.org/dc/elements/1.1/">[1899]</dc:date>
+<dc:language xmlns:dc="http://purl.org/dc/elements/1.1/">eng</dc:language>
+<dc:identifier xmlns:dc="http://purl.org/dc/elements/1.1/">https://bws.biblios.net/bib/24</dc:identifier></oai_dc:dc>
+</metadata>
+</record>
+<record>
+<header>
+<identifier>BIBLIOS-NET:26</identifier>
+<datestamp>2008-09-29T13:41:33Z</datestamp>
+<setSpec>ALL</setSpec>
+</header>
+<metadata>
+<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+<dc:title xmlns:dc="http://purl.org/dc/elements/1.1/">Pictures from the lives of the great composers for children</dc:title>
+<dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">
+    Tapper, Thomas,
+    1864-1958.
+  </dc:creator>
+<dc:type xmlns:dc="http://purl.org/dc/elements/1.1/">text</dc:type>
+<dc:publisher xmlns:dc="http://purl.org/dc/elements/1.1/">Philadelphia, T. Presser,</dc:publisher>
+<dc:date xmlns:dc="http://purl.org/dc/elements/1.1/">1899.</dc:date>
+<dc:language xmlns:dc="http://purl.org/dc/elements/1.1/">eng</dc:language>
+<dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Musicians.</dc:subject>
+<dc:identifier xmlns:dc="http://purl.org/dc/elements/1.1/">https://bws.biblios.net/bib/26</dc:identifier></oai_dc:dc>
+</metadata>
+</record>
+<record>
+<header>
+<identifier>BIBLIOS-NET:27</identifier>
+<datestamp>2008-09-29T13:41:33Z</datestamp>
+<setSpec>ALL</setSpec>
+</header>
+<metadata>
+<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+<dc:title xmlns:dc="http://purl.org/dc/elements/1.1/">Catalogue of the American Institute Photographic Salon. December fourth to twenty-third, MDCCCXCIX ...</dc:title>
+<dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">
+    American Institute of the City of New York.
+    Photographical Section.
+  </dc:creator>
+<dc:type xmlns:dc="http://purl.org/dc/elements/1.1/">text</dc:type>
+<dc:publisher xmlns:dc="http://purl.org/dc/elements/1.1/">[New York, The Goerck Art Press,</dc:publisher>
+<dc:date xmlns:dc="http://purl.org/dc/elements/1.1/">c1899]</dc:date>
+<dc:language xmlns:dc="http://purl.org/dc/elements/1.1/">eng</dc:language>
+<dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Photography</dc:subject>
+<dc:identifier xmlns:dc="http://purl.org/dc/elements/1.1/">https://bws.biblios.net/bib/27</dc:identifier></oai_dc:dc>
+</metadata>
+</record>
+<record>
+<header>
+<identifier>BIBLIOS-NET:28</identifier>
+<datestamp>2008-09-29T13:41:33Z</datestamp>
+<setSpec>ALL</setSpec>
+</header>
+<metadata>
+<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+<dc:title xmlns:dc="http://purl.org/dc/elements/1.1/">America to-day; observations and reflections</dc:title>
+<dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">
+    Archer, William,
+    1856-1924.
+  </dc:creator>
+<dc:type xmlns:dc="http://purl.org/dc/elements/1.1/">text</dc:type>
+<dc:publisher xmlns:dc="http://purl.org/dc/elements/1.1/">New York, C. Scribner's sons,</dc:publisher>
+<dc:date xmlns:dc="http://purl.org/dc/elements/1.1/">1899.</dc:date>
+<dc:language xmlns:dc="http://purl.org/dc/elements/1.1/">eng</dc:language>
+<dc:format xmlns:dc="http://purl.org/dc/elements/1.1/">s</dc:format>
+<dc:description xmlns:dc="http://purl.org/dc/elements/1.1/">Electronic reproduction.</dc:description>
+<dc:description xmlns:dc="http://purl.org/dc/elements/1.1/">Master and use digital copies are also available from the Library of Congress Web site; technical details on the digital scanning are available at http://hdl.loc.gov/loc.gdc/collbuild.lhbtn</dc:description>
+<dc:identifier xmlns:dc="http://purl.org/dc/elements/1.1/">http://hdl.loc.gov/loc.gdc/lhbtn.00087</dc:identifier>
+<dc:identifier xmlns:dc="http://purl.org/dc/elements/1.1/">https://bws.biblios.net/bib/28</dc:identifier></oai_dc:dc>
+</metadata>
+</record>
+<record>
+<header>
+<identifier>BIBLIOS-NET:29</identifier>
+<datestamp>2008-09-29T13:41:33Z</datestamp>
+<setSpec>ALL</setSpec>
+</header>
+<metadata>
+<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+<dc:title xmlns:dc="http://purl.org/dc/elements/1.1/">The Baltimore society address book ... 1900.</dc:title>
+<dc:type xmlns:dc="http://purl.org/dc/elements/1.1/">text</dc:type>
+<dc:publisher xmlns:dc="http://purl.org/dc/elements/1.1/">New York city, Dau publishing co.,</dc:publisher>
+<dc:date xmlns:dc="http://purl.org/dc/elements/1.1/">c1899.</dc:date>
+<dc:language xmlns:dc="http://purl.org/dc/elements/1.1/">eng</dc:language>
+<dc:identifier xmlns:dc="http://purl.org/dc/elements/1.1/">https://bws.biblios.net/bib/29</dc:identifier></oai_dc:dc>
+</metadata>
+</record>
+<record>
+<header>
+<identifier>BIBLIOS-NET:30</identifier>
+<datestamp>2008-09-29T13:41:33Z</datestamp>
+<setSpec>ALL</setSpec>
+</header>
+<metadata>
+<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+<dc:title xmlns:dc="http://purl.org/dc/elements/1.1/">The man and his message;</dc:title>
+<dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">
+    Booth, Henry M.
+    (Henry Matthias),
+    1843-1899.
+  </dc:creator>
+<dc:type xmlns:dc="http://purl.org/dc/elements/1.1/">text</dc:type>
+<dc:publisher xmlns:dc="http://purl.org/dc/elements/1.1/">New York, Fleming H. Revell Company</dc:publisher>
+<dc:date xmlns:dc="http://purl.org/dc/elements/1.1/">[c1899]</dc:date>
+<dc:language xmlns:dc="http://purl.org/dc/elements/1.1/">eng</dc:language>
+<dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Pastoral theology.</dc:subject>
+<dc:identifier xmlns:dc="http://purl.org/dc/elements/1.1/">https://bws.biblios.net/bib/30</dc:identifier></oai_dc:dc>
+</metadata>
+</record>
+<record>
+<header>
+<identifier>BIBLIOS-NET:31</identifier>
+<datestamp>2008-09-29T13:41:33Z</datestamp>
+<setSpec>ALL</setSpec>
+</header>
+<metadata>
+<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+<dc:title xmlns:dc="http://purl.org/dc/elements/1.1/">Treatise on orthopedic surgery /</dc:title>
+<dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">
+    Bradford, Edward H.
+    (Edward Hickling),
+    1848-1926.
+  </dc:creator>
+<dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">
+    Lovett, Robert Williamson,
+    1859-1924,
+    joint author.
+  </dc:creator>
+<dc:type xmlns:dc="http://purl.org/dc/elements/1.1/">text</dc:type>
+<dc:publisher xmlns:dc="http://purl.org/dc/elements/1.1/">New York : W. Wood,</dc:publisher>
+<dc:date xmlns:dc="http://purl.org/dc/elements/1.1/">1899.</dc:date>
+<dc:language xmlns:dc="http://purl.org/dc/elements/1.1/">eng</dc:language>
+<dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Orthopedics.</dc:subject>
+<dc:identifier xmlns:dc="http://purl.org/dc/elements/1.1/">https://bws.biblios.net/bib/31</dc:identifier></oai_dc:dc>
+</metadata>
+</record>
+<record>
+<header>
+<identifier>BIBLIOS-NET:32</identifier>
+<datestamp>2008-09-29T13:41:33Z</datestamp>
+<setSpec>ALL</setSpec>
+</header>
+<metadata>
+<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+<dc:title xmlns:dc="http://purl.org/dc/elements/1.1/">Beyond the hills of dream,</dc:title>
+<dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">
+    Campbell, Wilfred,
+    1858?-1918.
+  </dc:creator>
+<dc:type xmlns:dc="http://purl.org/dc/elements/1.1/">text</dc:type>
+<dc:publisher xmlns:dc="http://purl.org/dc/elements/1.1/">Boston, Houghton, Mifflin,</dc:publisher>
+<dc:date xmlns:dc="http://purl.org/dc/elements/1.1/">1899.</dc:date>
+<dc:language xmlns:dc="http://purl.org/dc/elements/1.1/">eng</dc:language>
+<dc:identifier xmlns:dc="http://purl.org/dc/elements/1.1/">https://bws.biblios.net/bib/32</dc:identifier></oai_dc:dc>
+</metadata>
+</record>
+<record>
+<header>
+<identifier>BIBLIOS-NET:33</identifier>
+<datestamp>2008-09-29T13:41:33Z</datestamp>
+<setSpec>ALL</setSpec>
+</header>
+<metadata>
+<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+<dc:title xmlns:dc="http://purl.org/dc/elements/1.1/">Compendium. H. de Balzac's Comédie humaine,</dc:title>
+<dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">
+    Cerfberr, Anatole,
+    1835-1896.
+  </dc:creator>
+<dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">
+    Christophe, Jules François,
+    1840-
+  </dc:creator>
+<dc:type xmlns:dc="http://purl.org/dc/elements/1.1/">text</dc:type>
+<dc:publisher xmlns:dc="http://purl.org/dc/elements/1.1/">Philadelphia, The Gebbie publishing co., ltd.,</dc:publisher>
+<dc:date xmlns:dc="http://purl.org/dc/elements/1.1/">1899.</dc:date>
+<dc:language xmlns:dc="http://purl.org/dc/elements/1.1/">eng</dc:language>
+<dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Balzac, Honoré de, 1799-1850.</dc:subject>
+<dc:identifier xmlns:dc="http://purl.org/dc/elements/1.1/">https://bws.biblios.net/bib/33</dc:identifier></oai_dc:dc>
+</metadata>
+</record>
+<record>
+<header>
+<identifier>BIBLIOS-NET:34</identifier>
+<datestamp>2008-09-29T13:41:33Z</datestamp>
+<setSpec>ALL</setSpec>
+</header>
+<metadata>
+<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+<dc:title xmlns:dc="http://purl.org/dc/elements/1.1/">The story of Ronald Kestrel.</dc:title>
+<dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">
+    Dawson, A. J.
+    (Alec John),
+    1872-1952.
+  </dc:creator>
+<dc:type xmlns:dc="http://purl.org/dc/elements/1.1/">text</dc:type>
+<dc:publisher xmlns:dc="http://purl.org/dc/elements/1.1/">New York, D. Appleton and company,</dc:publisher>
+<dc:date xmlns:dc="http://purl.org/dc/elements/1.1/">1899.</dc:date>
+<dc:language xmlns:dc="http://purl.org/dc/elements/1.1/">eng</dc:language>
+<dc:identifier xmlns:dc="http://purl.org/dc/elements/1.1/">https://bws.biblios.net/bib/34</dc:identifier></oai_dc:dc>
+</metadata>
+</record>
+<record>
+<header>
+<identifier>BIBLIOS-NET:35</identifier>
+<datestamp>2008-09-29T13:41:33Z</datestamp>
+<setSpec>ALL</setSpec>
+</header>
+<metadata>
+<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+<dc:title xmlns:dc="http://purl.org/dc/elements/1.1/">Lessons on manners; arranged for grammar schools, high schools, and academies.</dc:title>
+<dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">
+    Dewey, Julia M.
+  </dc:creator>
+<dc:type xmlns:dc="http://purl.org/dc/elements/1.1/">text</dc:type>
+<dc:publisher xmlns:dc="http://purl.org/dc/elements/1.1/">New York, Hinds &amp; Noble,</dc:publisher>
+<dc:date xmlns:dc="http://purl.org/dc/elements/1.1/">c1899.</dc:date>
+<dc:language xmlns:dc="http://purl.org/dc/elements/1.1/">eng</dc:language>
+<dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Etiquette.</dc:subject>
+<dc:identifier xmlns:dc="http://purl.org/dc/elements/1.1/">https://bws.biblios.net/bib/35</dc:identifier></oai_dc:dc>
+</metadata>
+</record>
+<record>
+<header>
+<identifier>BIBLIOS-NET:36</identifier>
+<datestamp>2008-09-29T13:41:33Z</datestamp>
+<setSpec>ALL</setSpec>
+</header>
+<metadata>
+<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+<dc:title xmlns:dc="http://purl.org/dc/elements/1.1/">Lessons on morals; arranged for grammar schools, high schools, and academies,</dc:title>
+<dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">
+    Dewey, Julia M.
+  </dc:creator>
+<dc:type xmlns:dc="http://purl.org/dc/elements/1.1/">text</dc:type>
+<dc:publisher xmlns:dc="http://purl.org/dc/elements/1.1/">New York, Hinds &amp; Noble,</dc:publisher>
+<dc:date xmlns:dc="http://purl.org/dc/elements/1.1/">c1899.</dc:date>
+<dc:language xmlns:dc="http://purl.org/dc/elements/1.1/">eng</dc:language>
+<dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Ethics.</dc:subject>
+<dc:identifier xmlns:dc="http://purl.org/dc/elements/1.1/">https://bws.biblios.net/bib/36</dc:identifier></oai_dc:dc>
+</metadata>
+</record>
+<record>
+<header>
+<identifier>BIBLIOS-NET:37</identifier>
+<datestamp>2008-09-29T13:41:33Z</datestamp>
+<setSpec>ALL</setSpec>
+</header>
+<metadata>
+<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+<dc:title xmlns:dc="http://purl.org/dc/elements/1.1/">Carmina sacerdotis, by Rev. John H. Dooley.</dc:title>
+<dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">
+    Dooley, John Henry,
+    1866-1934.
+  </dc:creator>
+<dc:type xmlns:dc="http://purl.org/dc/elements/1.1/">text</dc:type>
+<dc:publisher xmlns:dc="http://purl.org/dc/elements/1.1/">New York, W. H. Young &amp; company,</dc:publisher>
+<dc:date xmlns:dc="http://purl.org/dc/elements/1.1/">1899.</dc:date>
+<dc:language xmlns:dc="http://purl.org/dc/elements/1.1/">eng</dc:language>
+<dc:identifier xmlns:dc="http://purl.org/dc/elements/1.1/">https://bws.biblios.net/bib/37</dc:identifier></oai_dc:dc>
+</metadata>
+</record>
+<record>
+<header>
+<identifier>BIBLIOS-NET:38</identifier>
+<datestamp>2008-09-29T13:41:33Z</datestamp>
+<setSpec>ALL</setSpec>
+</header>
+<metadata>
+<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+<dc:title xmlns:dc="http://purl.org/dc/elements/1.1/">Love among the mistletoe, and poems,</dc:title>
+<dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">
+    Elmore, James B.
+    (James Buchanan),
+    1857-1942.
+  </dc:creator>
+<dc:type xmlns:dc="http://purl.org/dc/elements/1.1/">text</dc:type>
+<dc:publisher xmlns:dc="http://purl.org/dc/elements/1.1/">Alamo, Ind., The author,</dc:publisher>
+<dc:date xmlns:dc="http://purl.org/dc/elements/1.1/">1899.</dc:date>
+<dc:language xmlns:dc="http://purl.org/dc/elements/1.1/">eng</dc:language>
+<dc:identifier xmlns:dc="http://purl.org/dc/elements/1.1/">https://bws.biblios.net/bib/38</dc:identifier></oai_dc:dc>
+</metadata>
+</record>
+<record>
+<header>
+<identifier>BIBLIOS-NET:39</identifier>
+<datestamp>2008-09-29T13:41:33Z</datestamp>
+<setSpec>ALL</setSpec>
+</header>
+<metadata>
+<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+<dc:title xmlns:dc="http://purl.org/dc/elements/1.1/">The Civil War by campaigns,</dc:title>
+<dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">
+    Foster, Eli Greenawalt.
+  </dc:creator>
+<dc:type xmlns:dc="http://purl.org/dc/elements/1.1/">text</dc:type>
+<dc:publisher xmlns:dc="http://purl.org/dc/elements/1.1/">Topeka, Kan., Crane,</dc:publisher>
+<dc:date xmlns:dc="http://purl.org/dc/elements/1.1/">1899.</dc:date>
+<dc:language xmlns:dc="http://purl.org/dc/elements/1.1/">eng</dc:language>
+<dc:identifier xmlns:dc="http://purl.org/dc/elements/1.1/">https://bws.biblios.net/bib/39</dc:identifier></oai_dc:dc>
+</metadata>
+</record>
+<record>
+<header>
+<identifier>BIBLIOS-NET:40</identifier>
+<datestamp>2008-09-29T13:41:33Z</datestamp>
+<setSpec>ALL</setSpec>
+</header>
+<metadata>
+<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+<dc:title xmlns:dc="http://purl.org/dc/elements/1.1/">God's rebel,</dc:title>
+<dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">
+    Fuller, Hulbert,
+    1865-
+  </dc:creator>
+<dc:type xmlns:dc="http://purl.org/dc/elements/1.1/">text</dc:type>
+<dc:publisher xmlns:dc="http://purl.org/dc/elements/1.1/">Boston, L. C. Page and company (inc.)</dc:publisher>
+<dc:date xmlns:dc="http://purl.org/dc/elements/1.1/">1900.</dc:date>
+<dc:language xmlns:dc="http://purl.org/dc/elements/1.1/">eng</dc:language>
+<dc:identifier xmlns:dc="http://purl.org/dc/elements/1.1/">https://bws.biblios.net/bib/40</dc:identifier></oai_dc:dc>
+</metadata>
+</record>
+<record>
+<header>
+<identifier>BIBLIOS-NET:41</identifier>
+<datestamp>2008-09-29T13:41:33Z</datestamp>
+<setSpec>ALL</setSpec>
+</header>
+<metadata>
+<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+<dc:title xmlns:dc="http://purl.org/dc/elements/1.1/">History of the Reformed Church in the United States, 1725-1792.</dc:title>
+<dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">
+    Good, James I.
+    (James Isaac),
+    1850-1924.
+  </dc:creator>
+<dc:type xmlns:dc="http://purl.org/dc/elements/1.1/">text</dc:type>
+<dc:publisher xmlns:dc="http://purl.org/dc/elements/1.1/">Reading, Pa., D. Miller,</dc:publisher>
+<dc:date xmlns:dc="http://purl.org/dc/elements/1.1/">1899.</dc:date>
+<dc:language xmlns:dc="http://purl.org/dc/elements/1.1/">eng</dc:language>
+<dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Reformed Church in the United States</dc:subject>
+<dc:identifier xmlns:dc="http://purl.org/dc/elements/1.1/">https://bws.biblios.net/bib/41</dc:identifier></oai_dc:dc>
+</metadata>
+</record>
+<record>
+<header>
+<identifier>BIBLIOS-NET:42</identifier>
+<datestamp>2008-09-29T13:41:33Z</datestamp>
+<setSpec>ALL</setSpec>
+</header>
+<metadata>
+<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+<dc:title xmlns:dc="http://purl.org/dc/elements/1.1/">The golden age,</dc:title>
+<dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">
+    Grahame, Kenneth,
+    1859-1932.
+  </dc:creator>
+<dc:type xmlns:dc="http://purl.org/dc/elements/1.1/">text</dc:type>
+<dc:type xmlns:dc="http://purl.org/dc/elements/1.1/">
+    Pastoral fiction.
+    gsafd
+  </dc:type>
+<dc:type xmlns:dc="http://purl.org/dc/elements/1.1/">
+    Bildungsromans.
+    gsafd
+  </dc:type>
+<dc:publisher xmlns:dc="http://purl.org/dc/elements/1.1/">London, New York, J. Lane,</dc:publisher>
+<dc:date xmlns:dc="http://purl.org/dc/elements/1.1/">1900 [1899]</dc:date>
+<dc:language xmlns:dc="http://purl.org/dc/elements/1.1/">eng</dc:language>
+<dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Brothers and sisters</dc:subject>
+<dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Country life</dc:subject>
+<dc:identifier xmlns:dc="http://purl.org/dc/elements/1.1/">https://bws.biblios.net/bib/42</dc:identifier></oai_dc:dc>
+</metadata>
+</record>
+<record>
+<header>
+<identifier>BIBLIOS-NET:43</identifier>
+<datestamp>2008-09-29T13:41:33Z</datestamp>
+<setSpec>ALL</setSpec>
+</header>
+<metadata>
+<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+<dc:title xmlns:dc="http://purl.org/dc/elements/1.1/">The white terror; a romance of the French Revolution and after;</dc:title>
+<dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">
+    Gras, Félix,
+    1845-1901.
+  </dc:creator>
+<dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">
+    Janvier, Catharine A.
+    (Catharine Ann),
+    1841-1923,
+    tr.
+  </dc:creator>
+<dc:type xmlns:dc="http://purl.org/dc/elements/1.1/">text</dc:type>
+<dc:publisher xmlns:dc="http://purl.org/dc/elements/1.1/">New York, D. Appleton and Company,</dc:publisher>
+<dc:date xmlns:dc="http://purl.org/dc/elements/1.1/">1899.</dc:date>
+<dc:language xmlns:dc="http://purl.org/dc/elements/1.1/">eng</dc:language>
+<dc:identifier xmlns:dc="http://purl.org/dc/elements/1.1/">https://bws.biblios.net/bib/43</dc:identifier></oai_dc:dc>
+</metadata>
+</record>
+<record>
+<header>
+<identifier>BIBLIOS-NET:44</identifier>
+<datestamp>2008-09-29T13:41:33Z</datestamp>
+<setSpec>ALL</setSpec>
+</header>
+<metadata>
+<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+<dc:title xmlns:dc="http://purl.org/dc/elements/1.1/">Hell's canyon; a poem of the camps,</dc:title>
+<dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">
+    Griggs, Nathan Kirk,
+    1844-1910.
+  </dc:creator>
+<dc:type xmlns:dc="http://purl.org/dc/elements/1.1/">text</dc:type>
+<dc:publisher xmlns:dc="http://purl.org/dc/elements/1.1/">Chicago, The Schulte Pub. Co.</dc:publisher>
+<dc:date xmlns:dc="http://purl.org/dc/elements/1.1/">[c1899]</dc:date>
+<dc:language xmlns:dc="http://purl.org/dc/elements/1.1/">eng</dc:language>
+<dc:identifier xmlns:dc="http://purl.org/dc/elements/1.1/">https://bws.biblios.net/bib/44</dc:identifier></oai_dc:dc>
+</metadata>
+</record>
+<record>
+<header>
+<identifier>BIBLIOS-NET:45</identifier>
+<datestamp>2008-09-29T13:41:33Z</datestamp>
+<setSpec>ALL</setSpec>
+</header>
+<metadata>
+<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+<dc:title xmlns:dc="http://purl.org/dc/elements/1.1/">Little "Jim Crow", and other stories of children,</dc:title>
+<dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">
+    Morris, Clara,
+    1848-1925.
+  </dc:creator>
+<dc:type xmlns:dc="http://purl.org/dc/elements/1.1/">text</dc:type>
+<dc:publisher xmlns:dc="http://purl.org/dc/elements/1.1/">New York, Century,</dc:publisher>
+<dc:date xmlns:dc="http://purl.org/dc/elements/1.1/">1899.</dc:date>
+<dc:language xmlns:dc="http://purl.org/dc/elements/1.1/">eng</dc:language>
+<dc:description xmlns:dc="http://purl.org/dc/elements/1.1/">Little "Jim Crow."--My pirate.--"Shins."--"My Mr. Edward."--The gallant Theophilus.--A pretty plan.--An amateur Santa Claus.--"Marty Many-Things."--A little royal princess.--The princess Porcelain.--The hermits.</dc:description>
+<dc:identifier xmlns:dc="http://purl.org/dc/elements/1.1/">https://bws.biblios.net/bib/45</dc:identifier></oai_dc:dc>
+</metadata>
+</record>
+<record>
+<header>
+<identifier>BIBLIOS-NET:46</identifier>
+<datestamp>2008-09-29T13:41:33Z</datestamp>
+<setSpec>ALL</setSpec>
+</header>
+<metadata>
+<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+<dc:title xmlns:dc="http://purl.org/dc/elements/1.1/">Memoirs of a revolutionist,</dc:title>
+<dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">
+    Kropotkin, Petr Alekseevich,
+    kni͡a︡zʹ,
+    1842-1921.
+  </dc:creator>
+<dc:type xmlns:dc="http://purl.org/dc/elements/1.1/">text</dc:type>
+<dc:publisher xmlns:dc="http://purl.org/dc/elements/1.1/">Boston and New York, Houghton, Mifflin and company,</dc:publisher>
+<dc:date xmlns:dc="http://purl.org/dc/elements/1.1/">1899.</dc:date>
+<dc:language xmlns:dc="http://purl.org/dc/elements/1.1/">eng</dc:language>
+<dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Kropotkin, Petr Alekseevich, kni͡a︡zʹ, 1842-1921.</dc:subject>
+<dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Anarchists</dc:subject>
+<dc:identifier xmlns:dc="http://purl.org/dc/elements/1.1/">https://bws.biblios.net/bib/46</dc:identifier></oai_dc:dc>
+</metadata>
+</record>
+<record>
+<header>
+<identifier>BIBLIOS-NET:47</identifier>
+<datestamp>2008-09-29T13:41:33Z</datestamp>
+<setSpec>ALL</setSpec>
+</header>
+<metadata>
+<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+<dc:title xmlns:dc="http://purl.org/dc/elements/1.1/">Philosophy of history; an introduction to the philosophical study of politics,</dc:title>
+<dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">
+    Lloyd, Alfred H.
+    (Alfred Henry),
+    1864-1927.
+  </dc:creator>
+<dc:type xmlns:dc="http://purl.org/dc/elements/1.1/">text</dc:type>
+<dc:publisher xmlns:dc="http://purl.org/dc/elements/1.1/">Ann Arbor, G. Wahr,</dc:publisher>
+<dc:date xmlns:dc="http://purl.org/dc/elements/1.1/">1899.</dc:date>
+<dc:language xmlns:dc="http://purl.org/dc/elements/1.1/">eng</dc:language>
+<dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">History</dc:subject>
+<dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Social sciences.</dc:subject>
+<dc:identifier xmlns:dc="http://purl.org/dc/elements/1.1/">https://bws.biblios.net/bib/47</dc:identifier></oai_dc:dc>
+</metadata>
+</record>
+<record>
+<header>
+<identifier>BIBLIOS-NET:48</identifier>
+<datestamp>2008-09-29T13:41:33Z</datestamp>
+<setSpec>ALL</setSpec>
+</header>
+<metadata>
+<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+<dc:title xmlns:dc="http://purl.org/dc/elements/1.1/">Famous homes of Great Britain and their stories,</dc:title>
+<dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">
+    Malan, Alfred Henry,
+    editor.
+  </dc:creator>
+<dc:type xmlns:dc="http://purl.org/dc/elements/1.1/">text</dc:type>
+<dc:publisher xmlns:dc="http://purl.org/dc/elements/1.1/">New York, G. P. Putnam's son; London, The Pall Mall magazine,</dc:publisher>
+<dc:date xmlns:dc="http://purl.org/dc/elements/1.1/">1900.</dc:date>
+<dc:language xmlns:dc="http://purl.org/dc/elements/1.1/">eng</dc:language>
+<dc:description xmlns:dc="http://purl.org/dc/elements/1.1/">Belvoir castle, by A. H. Malan.--Blenheim, by the Duke of Marlborough.--Hardwick hall, by A. H. Malan.--Charlecole, by Richard Davey.--Holland house, by the Hon. Caroline Roche.--Cawdo castle, by Viscount Etnklyn.--Battle abbey, by the Duchess of Cleveland.--Chatsworth, by A. H. Malan.--Lyme, by the dowager Lady Newton.--Peushurst, by Lady de L'lsle and Dudley.--Warwick castle, by the Countess of Warwick.--Ainwich castle, by A. H. Malan.</dc:description>
+<dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Historic buildings</dc:subject>
+<dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Country homes</dc:subject>
+<dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Dwellings</dc:subject>
+<dc:identifier xmlns:dc="http://purl.org/dc/elements/1.1/">https://bws.biblios.net/bib/48</dc:identifier></oai_dc:dc>
+</metadata>
+</record>
+<record>
+<header>
+<identifier>BIBLIOS-NET:49</identifier>
+<datestamp>2008-09-29T13:41:33Z</datestamp>
+<setSpec>ALL</setSpec>
+</header>
+<metadata>
+<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+<dc:title xmlns:dc="http://purl.org/dc/elements/1.1/">Lalla Rookh; an oriental romance,</dc:title>
+<dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">
+    Moore, Thomas,
+    1779-1852.
+  </dc:creator>
+<dc:type xmlns:dc="http://purl.org/dc/elements/1.1/">text</dc:type>
+<dc:publisher xmlns:dc="http://purl.org/dc/elements/1.1/">Boston, D. Estes,</dc:publisher>
+<dc:date xmlns:dc="http://purl.org/dc/elements/1.1/">1899.</dc:date>
+<dc:language xmlns:dc="http://purl.org/dc/elements/1.1/">eng</dc:language>
+<dc:identifier xmlns:dc="http://purl.org/dc/elements/1.1/">https://bws.biblios.net/bib/49</dc:identifier></oai_dc:dc>
+</metadata>
+</record>
+<record>
+<header>
+<identifier>BIBLIOS-NET:50</identifier>
+<datestamp>2008-09-29T13:41:33Z</datestamp>
+<setSpec>ALL</setSpec>
+</header>
+<metadata>
+<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+<dc:title xmlns:dc="http://purl.org/dc/elements/1.1/">Bacteriology in medicine and surgery. A practical manual for physicians, health officers, and students.</dc:title>
+<dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">
+    Park, William Hallock,
+    1863-1939.
+  </dc:creator>
+<dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">
+    Guerard, Arthur Rose,
+    1851-
+  </dc:creator>
+<dc:type xmlns:dc="http://purl.org/dc/elements/1.1/">text</dc:type>
+<dc:publisher xmlns:dc="http://purl.org/dc/elements/1.1/">New York, Philadelphia, Lea Brothers &amp; Co.</dc:publisher>
+<dc:date xmlns:dc="http://purl.org/dc/elements/1.1/">[1899]</dc:date>
+<dc:language xmlns:dc="http://purl.org/dc/elements/1.1/">eng</dc:language>
+<dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Medical microbiology.</dc:subject>
+<dc:identifier xmlns:dc="http://purl.org/dc/elements/1.1/">https://bws.biblios.net/bib/50</dc:identifier></oai_dc:dc>
+</metadata>
+</record>
+<record>
+<header>
+<identifier>BIBLIOS-NET:51</identifier>
+<datestamp>2008-09-29T13:41:33Z</datestamp>
+<setSpec>ALL</setSpec>
+</header>
+<metadata>
+<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+<dc:title xmlns:dc="http://purl.org/dc/elements/1.1/">The foundations of English literature ; a study of the development of English thought ad expression from Beowulf to Milton,</dc:title>
+<dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">
+    Pattee, Fred Lewis,
+    1863-1950.
+  </dc:creator>
+<dc:type xmlns:dc="http://purl.org/dc/elements/1.1/">text</dc:type>
+<dc:publisher xmlns:dc="http://purl.org/dc/elements/1.1/">Boston, Silver, Burdett</dc:publisher>
+<dc:date xmlns:dc="http://purl.org/dc/elements/1.1/">[1899]</dc:date>
+<dc:language xmlns:dc="http://purl.org/dc/elements/1.1/">eng</dc:language>
+<dc:description xmlns:dc="http://purl.org/dc/elements/1.1/">"Bibliographical note": p. 8-9.</dc:description>
+<dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">English literature</dc:subject>
+<dc:identifier xmlns:dc="http://purl.org/dc/elements/1.1/">https://bws.biblios.net/bib/51</dc:identifier></oai_dc:dc>
+</metadata>
+</record>
+<record>
+<header>
+<identifier>BIBLIOS-NET:52</identifier>
+<datestamp>2008-09-29T13:41:33Z</datestamp>
+<setSpec>ALL</setSpec>
+</header>
+<metadata>
+<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+<dc:title xmlns:dc="http://purl.org/dc/elements/1.1/">Twenty lessons in letter writing and business forms; for schools and private study.</dc:title>
+<dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">
+    Powers, O. M.
+    (Orville Marcellus),
+    1852-
+  </dc:creator>
+<dc:type xmlns:dc="http://purl.org/dc/elements/1.1/">text</dc:type>
+<dc:publisher xmlns:dc="http://purl.org/dc/elements/1.1/">Chicago,</dc:publisher>
+<dc:date xmlns:dc="http://purl.org/dc/elements/1.1/">1899.</dc:date>
+<dc:language xmlns:dc="http://purl.org/dc/elements/1.1/">eng</dc:language>
+<dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Letter-writing.</dc:subject>
+<dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Commercial correspondence.</dc:subject>
+<dc:identifier xmlns:dc="http://purl.org/dc/elements/1.1/">https://bws.biblios.net/bib/52</dc:identifier></oai_dc:dc>
+</metadata>
+</record>
+<record>
+<header>
+<identifier>BIBLIOS-NET:53</identifier>
+<datestamp>2008-09-29T13:41:33Z</datestamp>
+<setSpec>ALL</setSpec>
+</header>
+<metadata>
+<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+<dc:title xmlns:dc="http://purl.org/dc/elements/1.1/">Hydraulic diagrams for the discharge of conduits and canals; based upon the formula of Ganguillet and Kutter,</dc:title>
+<dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">
+    Swan, Charles H.
+  </dc:creator>
+<dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">
+    Horton, Theodore,
+    joint author.
+  </dc:creator>
+<dc:type xmlns:dc="http://purl.org/dc/elements/1.1/">text</dc:type>
+<dc:publisher xmlns:dc="http://purl.org/dc/elements/1.1/">New York, The Engineering news publishing company,</dc:publisher>
+<dc:date xmlns:dc="http://purl.org/dc/elements/1.1/">1899.</dc:date>
+<dc:language xmlns:dc="http://purl.org/dc/elements/1.1/">eng</dc:language>
+<dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Hydraulics</dc:subject>
+<dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Aqueducts.</dc:subject>
+<dc:identifier xmlns:dc="http://purl.org/dc/elements/1.1/">https://bws.biblios.net/bib/53</dc:identifier></oai_dc:dc>
+</metadata>
+</record>
+<resumptionToken cursor="50" completeListSize="31809818">oai_dc:50:1970-01-01:2009-11-09</resumptionToken>
+</ListRecords>
+
+</OAI-PMH>
