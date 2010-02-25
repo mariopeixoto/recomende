@@ -1,4 +1,4 @@
-package br.recomende.model.controller.login;
+package br.recomende.model.controller.auth;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -8,7 +8,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 @RequestMapping("/signin")
-public class SignController {
+public class AuthController {
 	
 	@RequestMapping(method=RequestMethod.GET)
 	public ModelAndView signin(@RequestParam(required=false) Boolean error) {

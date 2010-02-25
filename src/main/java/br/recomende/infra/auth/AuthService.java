@@ -9,13 +9,13 @@ import org.springframework.stereotype.Service;
 
 import br.recomende.model.repository.UserRepository;
 
-@Service("signService")
-public class SignService implements UserDetailsService {
+@Service("authService")
+public class AuthService implements UserDetailsService {
 	
 	private UserRepository userRepository;
 	
 	@Autowired
-	public SignService(UserRepository userRepository) {
+	public AuthService(UserRepository userRepository) {
 		this.userRepository = userRepository;
 	}
 

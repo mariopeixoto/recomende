@@ -21,7 +21,7 @@
 	</http>
 	
 	<authentication-manager>
-		<authentication-provider user-service-ref='signService'>
+		<authentication-provider user-service-ref='authService'>
 			<password-encoder hash="sha"/>
 		</authentication-provider>
 	</authentication-manager>
