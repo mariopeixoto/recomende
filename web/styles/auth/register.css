@@ -1,0 +1,38 @@
+@CHARSET "UTF-8";
+
+#logo {
+	padding-left: 10%;
+	padding-bottom: 30px;
+	width: 100%;
+}
+
+.error {
+	color: red;
+}
+
+form > fieldset {
+	border: 1px solid #003366;
+	color: #003366;
+}
+
+form > fieldset > p > label {
+	font-size: 14px;
+	color: #003366;
+}
+
+form {
+	margin-left: 10%;
+	width: 500px;
+}
+
+button {
+	margin-top: 3px;
+	margin-bottom: 3px;
+	width: 100px;
+	border: 1px solid #003366;
+	background-color: #336699;
+	cursor: pointer;
+	padding: 2px;
+	color: #ffcc66;
+}
+

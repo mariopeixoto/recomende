@@ -5,23 +5,16 @@ import java.util.HashMap;
 import java.util.Map;
 
 import javax.persistence.Column;
-import javax.persistence.Entity;
+import javax.persistence.Embeddable;
 import javax.persistence.FetchType;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
 
 import org.hibernate.annotations.CollectionOfElements;
 import org.hibernate.annotations.MapKey;
 
-@Entity
+@Embeddable
 public class Profile implements Serializable {
 	
 	private static final long serialVersionUID = 3018693451709969007L;
-	
-	@Id
-	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	private Integer id;
 	
 	@CollectionOfElements(fetch=FetchType.EAGER)
 	@MapKey(columns={@Column(name="tag")})
@@ -58,14 +51,6 @@ public class Profile implements Serializable {
 	
 	public Map<String,Double> getElements() {
 		return this.profile;
-	}
-	
-	public Integer getId() {
-		return id;
-	}
-
-	public void setId(Integer id) {
-		this.id = id;
 	}
 	
 }

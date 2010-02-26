@@ -6,8 +6,8 @@
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<title>RecoMEnde - Sign in</title>
-	<link href="styles/sign/main.css" rel="stylesheet" type="text/css">
+	<title>RecoMEnde - <fmt:message key="signin" /></title>
+	<link href="styles/auth/signin.css" rel="stylesheet" type="text/css">
 	<script type="text/javascript" language="JavaScript" src="scripts/jquery-1.4.2.js" ></script>
 </head>
 <body>
@@ -19,24 +19,27 @@
 			<strong><c:out value="${SPRING_SECURITY_LAST_EXCEPTION.localizedMessage}"/></strong>
 		</c:if>
 	</div>
-	<form id="signin" action="j_spring_security_check" method="post">
-		<ul>
-			<li>
-				<label for="username">
-					<fmt:message key="username" />:
-				</label>
-				<input type="text" name="j_username" id="username" size="20"/>
-			</li>
-			<li>
-				<label for="password">
-					<fmt:message key="password" />:
-				</label>
-				<input type="password" name="j_password" id="password" size="20"/>
-			</li>
-			<li>
-				<input id="submit" type="submit" value="<fmt:message key="signin" />"/>
-			</li>
-		</ul>
-	</form>
+	<div id="out">
+		<form action="j_spring_security_check" method="post">
+			<ul>
+				<li>
+					<label for="username">
+						<fmt:message key="username" />:
+					</label>
+					<input type="text" name="j_username" id="username"/>
+				</li>
+				<li>
+					<label for="password">
+						<fmt:message key="password" />:
+					</label>
+					<input type="password" name="j_password" id="password"/>
+				</li>
+				<li>
+					<button id="submit"><fmt:message key="signin" /></button>
+				</li>
+			</ul>
+			<a id="register" href="register"><fmt:message key="register" /></a>
+		</form>
+	</div>
 </body>
 </html>

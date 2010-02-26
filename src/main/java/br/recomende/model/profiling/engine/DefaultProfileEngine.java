@@ -32,8 +32,10 @@ public class DefaultProfileEngine implements ProfileEngine {
 		for (BibliographicProduction production : curriculumVitae.getBibliographicProductions()) {
 			try {
 				Languages titleLanguage = Languages.getType(production.getLanguage());
-				termScorer.score(TermField.TITLE, titleLanguage, production.getTitle(), production.getRelevant());
-				termScorer.score(TermField.KEYWORDS, titleLanguage, production.getKeywords(), production.getRelevant());
+				if (titleLanguage == Languages.EN) {//Prototipo apenas com inglês
+					termScorer.score(TermField.TITLE, titleLanguage, production.getTitle(), production.getRelevant());
+					termScorer.score(TermField.KEYWORDS, titleLanguage, production.getKeywords(), production.getRelevant());
+				}
 			} catch (IOException e) {
 				log.debug(e.getLocalizedMessage());
 				continue;

@@ -5,6 +5,7 @@ import java.util.Map;
 
 import org.apache.lucene.analysis.Analyzer;
 import org.apache.lucene.analysis.br.BrazilianAnalyzer;
+import org.apache.lucene.analysis.fr.FrenchAnalyzer;
 import org.apache.lucene.analysis.standard.StandardAnalyzer;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
@@ -20,8 +21,8 @@ public final class AnalyzerFactory {
 
 	public AnalyzerFactory() {
 		CLASSES = new HashMap<Languages, Class<?>>();
-		CLASSES.put(Languages.EN, StandardAnalyzer.class);
 		CLASSES.put(Languages.PT, BrazilianAnalyzer.class);
+		CLASSES.put(Languages.FR, FrenchAnalyzer.class);
 	}
 	
 	public Analyzer instanceFor(Languages language) {
@@ -34,7 +35,7 @@ public final class AnalyzerFactory {
 				throw new RuntimeException(e);
 			}
 		}
-		return null;
+		return new StandardAnalyzer();
 	}
 
 }

@@ -1,0 +1,79 @@
+@CHARSET "UTF-8";
+
+#logo {
+	padding-left: 15%;
+	padding-bottom: 30px;
+	width: 100%;
+}
+
+#error {
+	text-align: center;
+}
+
+form {
+	background-color: #336699;
+	padding: 6px;
+	width: 230px;
+	height: 108px;
+}
+
+#register {
+	text-align: center;
+	font-size: 14px;
+	float: left;
+	width: 100%;
+	color: #ffcc66;
+}
+
+#out > form > ul {
+	padding: 0;
+}
+
+#out > form > ul > li {
+	list-style: none;
+	display: block;
+	float: left;
+	width: 100%;
+	padding-top: 2px;
+	paddding-bottom: 2px;
+}
+
+#out > form > ul > li > input {
+	float: right;
+	width: 160px;
+	height: 13px;
+}
+
+#out > form > ul > li > label {
+	font-size: 14px;
+	color: white;
+}
+
+strong {
+	color: red;
+}
+
+#out, #out form {
+	position: relative;
+	display: block;
+}
+
+#out {
+	border: 1px solid #003366;
+	padding: 5px;
+	margin-left: 19.5%;
+	width: 242px;
+	height: 120px;
+}
+
+#submit {
+	float: right;
+	margin-top: 3px;
+	margin-bottom: 3px;
+	width: 100px;
+	border: 1px solid white;
+	background-color: #6699cc;
+	cursor: pointer;
+	padding: 2px;
+	color: #663300;
+}
