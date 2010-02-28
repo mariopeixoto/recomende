@@ -26,40 +26,40 @@ public class DublinCoreDocument extends br.recomende.model.document.Document {
 	@Column(columnDefinition="text")
 	private String description;
 
-	@Column(length=500)
+	@Column(columnDefinition="text")
 	private String creator;
 	
-	@Column(length=500)
+	@Column(columnDefinition="text")
 	private String publisher;
 	
-	@Column(length=500)
+	@Column(columnDefinition="text")
 	private String contributor;
 	
-	@Column(length=500)
+	@Column(length=20)
 	private String date;
 	
-	@Column(length=500)
+	@Column(columnDefinition="text")
 	private String type;
 	
-	@Column(length=500)
+	@Column(columnDefinition="text")
 	private String format;
 	
-	@Column(length=500)
+	@Column(columnDefinition="text")
 	private String identifier;
 	
-	@Column(length=500)
+	@Column(columnDefinition="text")
 	private String source;
 	
-	@Column(length=500)
+	@Column(columnDefinition="text")
 	private String language;
 	
-	@Column(length=500)
+	@Column(columnDefinition="text")
 	private String relation;
 	
-	@Column(length=500)
+	@Column(columnDefinition="text")
 	private String coverage;
 	
-	@Column(length=500)
+	@Column(columnDefinition="text")
 	private String rights;
 	
 	@ManyToOne

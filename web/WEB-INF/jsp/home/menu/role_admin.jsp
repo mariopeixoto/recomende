@@ -8,18 +8,16 @@
 	<link href="styles/menu/admin.css" rel="stylesheet" type="text/css">
 	<script type="text/javascript" src="scripts/jquery.js" ></script>
 	<script type="text/javascript">
-		function mapAdminMenu() {
-			$("#harvesterbutton").click(
-				function harvesterButton() {
-					$.get("harvester", showContent);
-				}
-			);
-			$("#harvestertypebutton").click(
-				function harvesterTypeButton() {
-					$.get("harvester/type", showContent);
-				}
-			);
-		}
+		$("#harvesterbutton").click(
+			function harvesterButton() {
+				$.get("harvester", showContent);
+			}
+		);
+		$("#harvestertypebutton").click(
+			function harvesterTypeButton() {
+				$.get("harvester/type", showContent);
+			}
+		);
 	</script>
 </head>
 <body>

@@ -24,7 +24,7 @@ public class HarvestTask implements Task {
 	private DocumentRepository documentRepository;
 	private TaskExecutor taskExecutor;
 	private PlatformTransactionManager transactionManager;
-	
+
 	@Autowired
 	public HarvestTask(HarvesterDefinitionRepository harvesterDefinitionRepository, 
 			HarvesterFactory harvesterFactory,
@@ -39,8 +39,8 @@ public class HarvestTask implements Task {
 	}
 	
 	@Override
-	@Scheduled(cron="0 0 2 * * *")
-	//@Scheduled(fixedDelay=500000)
+	//@Scheduled(cron="0 0 2 * * *")
+	@Scheduled(fixedDelay=5000000)
 	public void run() {
 		log.info("Initializing harvest task");
 		Collection<HarvesterDefinition> harvesterDefinitions = this.harvesterDefinitionRepository.list();

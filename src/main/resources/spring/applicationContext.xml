@@ -18,7 +18,7 @@
 
 	<!-- Scans this application for @Components to deploy as beans -->
 	<context:component-scan base-package="br.recomende" />
-
+	
 	<!-- Application Message Bundle -->
 	<bean id="messageSource"
 		class="org.springframework.context.support.ReloadableResourceBundleMessageSource">

@@ -13,7 +13,7 @@
 			
 			<!-- Indexing configs -->
 			<property name="hibernate.search.default.directory_provider" value="org.hibernate.search.store.FSDirectoryProvider"/>
-			<property name="hibernate.search.default.indexBase" value="/Users/mario/recomende/indexes"/>
+			<property name="hibernate.search.default.indexBase" value="/tmp/recomende/indexes"/>
 		
 			<!-- Debug Configuration -->
 			<property name="hibernate.show_sql" value="true"/>

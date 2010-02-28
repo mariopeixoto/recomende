@@ -1,5 +1,6 @@
 package br.recomende.infra.persistence.dao;
 
+import java.util.Collection;
 import java.util.List;
 
 import org.apache.lucene.index.Term;
@@ -10,6 +11,8 @@ import org.hibernate.search.FullTextQuery;
 import org.hibernate.search.FullTextSession;
 import org.hibernate.search.Search;
 import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Propagation;
+import org.springframework.transaction.annotation.Transactional;
 
 import br.recomende.model.document.Document;
 import br.recomende.model.repository.DocumentRepository;
@@ -42,6 +45,17 @@ public class DocumentDao extends RepositoryWrapper<Document, Integer>
 		query.setProjection(FullTextQuery.SCORE, FullTextQuery.THIS);
 		query.setResultTransformer(new DocumentSearchResultTransformer());
 		return (List<ScoredDocument>)query.list();
+	}
+	
+	@Transactional(readOnly = false, propagation=Propagation.REQUIRES_NEW)
+	protected void indexAll() {
+		Collection<Document> documents = super.list();
+		FullTextSession fullTextSession = Search.getFullTextSession(super.getSession());
+		for (Document document : documents) {
+			fullTextSession.purge(document.getClass(), document);
+			fullTextSession.index(document);
+		}
+		fullTextSession.flushToIndexes();
 	}
 
 }

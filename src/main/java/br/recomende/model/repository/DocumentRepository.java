@@ -8,5 +8,5 @@ import br.recomende.model.searching.engine.ScoredDocument;
 public interface DocumentRepository extends GenericRepository<Document, Integer>{
 	
 	List<ScoredDocument> search(String term);
-
+	
 }

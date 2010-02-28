@@ -8,23 +8,21 @@
 	<link href="styles/menu/user.css" rel="stylesheet" type="text/css">
 	<script type="text/javascript" src="scripts/jquery.js" ></script>
 	<script type="text/javascript">
-		function mapUserMenu() {
-			$("#homebutton").click(
-				function homeButton() {
-					$.get("recommend", showContent);
-				}
-			);
-			$("#profilebutton").click(
-				function homeButton() {
-					$.get("profile", showContent);
-				}
-			);
-			$("#signoutbutton").click(
-				function homeButton() {
-					location.href = "./signout";
-				}
-			);
-		}
+		$("#homebutton").click(
+			function homeButton() {
+				$.get("recommend", showContent);
+			}
+		);
+		$("#profilebutton").click(
+			function homeButton() {
+				$.get("profile", showContent);
+			}
+		);
+		$("#signoutbutton").click(
+			function homeButton() {
+				location.href = "./signout";
+			}
+		);
 	</script>
 </head>
 <body>

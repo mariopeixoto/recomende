@@ -11,12 +11,6 @@
 	<link href="styles/home/home.css" rel="stylesheet" type="text/css">
 	<script type="text/javascript" src="scripts/jquery.js" ></script>
 	<script type="text/javascript">
-		$(document).ready(function(){
-			configureAjaxLoading();
-			mapUserMenu();
-			mapAdminMenu();
-	    });
-
 		function configureAjaxLoading() {
 			$('div#box').hide();
 			
@@ -39,17 +33,23 @@
 			$("div#contentHolder").html(data);
 			$("div#contents").addClass("bordered");
 		}
+
+		function loadMenu(data) {
+			$("div#menu").append(data);
+		}
+
+		$(document).ready(function(){
+			configureAjaxLoading();
+			<c:forEach items="${roles}" var="role">
+				$.get("home/menu/${role}", {} ,loadMenu);
+			</c:forEach>
+	    });
 	</script>
 </head>
 <body>
 	<div id="holder">
 		<div id="menu" class="bordered">
 			<img src="images/logo-small.png"/>
-			<c:forEach items="${roles}" var="role">
-				<p>
-					<jsp:include page="menu/${role}.jsp" />
-				</p>
-			</c:forEach>
 		</div>
 		<div id="contents">
 			<div id="box">
