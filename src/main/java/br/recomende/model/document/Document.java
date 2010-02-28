@@ -11,7 +11,7 @@ import javax.persistence.MappedSuperclass;
 
 @MappedSuperclass
 @Inheritance(strategy=InheritanceType.TABLE_PER_CLASS)
-public class Document implements Serializable {
+public abstract class Document implements Serializable {
 
 	private static final long serialVersionUID = 2873362394357223909L;
 	
@@ -19,13 +19,6 @@ public class Document implements Serializable {
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private Integer id;
 	
-	protected Document() {
-	}
-	
-	public Document(Integer id) {
-		this.id = id;
-	}
-
 	public Integer getId() {
 		return id;
 	}

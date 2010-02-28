@@ -1,6 +1,7 @@
 package br.recomende.model.searching.engine;
 
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
@@ -30,8 +31,8 @@ public class DocumentSearcher implements ContentBasedSearchEngine {
 
 	public List<Document> search(Profile profile) {
 		Map<Document, Double> documentMap = new HashMap<Document, Double>();
-		Map<String, Double> elements = profile.getElements();
-		for (Entry<String, Double> element : elements.entrySet()) {
+		Collection<Entry<String, Double>> elements = profile.getElements();
+		for (Entry<String, Double> element : elements) {
 			List<ScoredDocument> scoredDocuments = this.documentRepository.search(element.getKey());
 			for (ScoredDocument scoredDocument : scoredDocuments) {
 				Double score = documentMap.get(scoredDocument.getDocument());

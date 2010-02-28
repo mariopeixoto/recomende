@@ -1,0 +1,55 @@
+@CHARSET "UTF-8";
+
+h3 {
+	text-align: center;
+	color: #336699;
+}
+
+#types {
+	width: 100%;
+}
+
+.type {
+	float: left;
+	width: 100%;
+}
+
+.type > div, .type > select, .type > button, .type > input {
+	float: left;
+	margin: 10px;
+}
+
+.newtype {
+	float: left;
+	width: 100%;
+}
+
+.newtype > div, .newtype > select, .newtype > button {
+	float: left;
+	margin: 10px;
+}
+
+.type > button, .newtype > button {
+	font-size: 10px;
+}
+
+.newtype > div > label {
+	color: #f6931f;
+	font-size: small;
+}
+
+.type > div {
+	color: #f6931f;
+}
+
+.type > input, .newtype > div > #endpoint {
+	width: 300px;
+	color: #336699;
+	border: 1px dashed #ffd9b7;
+}
+
+.newtype > div > #name {
+	width: 120px;
+	color: #336699;
+	border: 1px dashed #ffd9b7;
+}

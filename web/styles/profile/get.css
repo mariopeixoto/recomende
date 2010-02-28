@@ -1,0 +1,79 @@
+@CHARSET "UTF-8";
+
+h3 {
+	text-align: center;
+	color: #336699;
+}
+
+#profile {
+	width: 400px;
+	margin-left: 200px;
+}
+
+#newterm {
+	width: 400px;
+	margin-left: 200px;
+}
+
+.score {
+	padding-top: 7px;
+	width: 200px;
+}
+
+.score input {
+	border: 0;
+	color: #f6931f;
+	font-weight:bold;
+	padding-left: 90px;
+}
+
+.term {
+	float: left;
+	width: 100%;
+	display: block;
+}
+
+.term > button {
+	float: left;
+	margin: 5px;
+}
+
+.term > div {
+	float: right;
+	margin: 5px;
+}
+
+.term > .description {
+	float: left;
+	color: #336699;
+}
+
+.small {
+	font-size: 10px;
+}
+
+.newterm {
+	float: left;
+	width: 100%;
+	display: block;
+}
+
+.newterm > button, .newterm > input {
+	float: left;
+	margin: 5px;
+}
+
+.newterm > div {
+	float: right;
+	margin: 5px;
+}
+
+.newterm > input {
+	width: 120px;
+	color: #336699;
+	border: 1px dashed #ffd9b7;
+}
+
+.newterm > button {
+	font-size: 10px;
+}

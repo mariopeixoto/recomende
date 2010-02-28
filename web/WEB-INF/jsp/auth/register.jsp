@@ -10,7 +10,6 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>RecoMEnde - <fmt:message key="register" /></title>
 	<link href="styles/auth/register.css" rel="stylesheet" type="text/css">
-	<script type="text/javascript" language="JavaScript" src="scripts/jquery-1.4.2.js" ></script>
 </head>
 <body>
 	<div id="logo">

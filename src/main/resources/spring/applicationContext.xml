@@ -37,6 +37,8 @@
 		<property name="entityManagerFactory" ref="entityManagerFactory" />
 	</bean>
 	
+	<bean id="taskExecutor" class="org.springframework.scheduling.concurrent.ConcurrentTaskExecutor" />
+	
 	<task:annotation-driven />
 	
 	<!-- Configures Spring MVC -->

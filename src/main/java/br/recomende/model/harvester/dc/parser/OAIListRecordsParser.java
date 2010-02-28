@@ -11,6 +11,7 @@ import org.springframework.stereotype.Component;
 import org.xml.sax.SAXException;
 
 import br.recomende.infra.util.SpringScope;
+import br.recomende.model.harvester.HarvesterDefinition;
 import br.recomende.model.harvester.dc.DublinCoreDocument;
 
 @Component
@@ -47,9 +48,15 @@ public class OAIListRecordsParser {
 	}
 	
 	@SuppressWarnings("unchecked")
-	public List<DublinCoreDocument> parse(InputStream stream) throws IOException, SAXException {
+	public List<DublinCoreDocument> parse(InputStream stream, HarvesterDefinition harvesterDefinition) throws IOException, SAXException {
 		List<DublinCoreDocument> returnList = (List<DublinCoreDocument>) this.digester.parse(stream);
-		return (returnList == null ? new ArrayList<DublinCoreDocument>() : returnList);
+		if (returnList == null) {
+			return new ArrayList<DublinCoreDocument>();
+		}
+		for (DublinCoreDocument doc : returnList) {
+			doc.setHarvesterDefinition(harvesterDefinition);
+		}
+		return returnList;
 	}
 	
 }

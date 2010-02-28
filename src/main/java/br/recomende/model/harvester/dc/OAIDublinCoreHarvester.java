@@ -50,7 +50,7 @@ public class OAIDublinCoreHarvester implements DocumentHarvester {
 		InputStream response = getFacade.get(this.harvesterDefinition.getEndPoint(), parameters);
 		
 		try {
-			return this.parser.parse(response);
+			return this.parser.parse(response, harvesterDefinition);
 		} catch (Exception e) {
 			throw new RuntimeException(e);
 		}

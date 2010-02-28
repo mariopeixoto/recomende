@@ -2,11 +2,13 @@ package br.recomende.model.harvester.dc;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.ManyToOne;
 
-import org.hibernate.search.annotations.Boost;
 import org.hibernate.search.annotations.Field;
 import org.hibernate.search.annotations.Index;
 import org.hibernate.search.annotations.Indexed;
+
+import br.recomende.model.harvester.HarvesterDefinition;
 
 @Entity
 @Indexed
@@ -15,27 +17,53 @@ public class DublinCoreDocument extends br.recomende.model.document.Document {
 	private static final long serialVersionUID = 803156250524041296L;
 	
 	@Field(index=Index.TOKENIZED)
-	@Boost(2.0F)
+	@Column(columnDefinition="text")
 	private String title;
-	
-	private String creator;
+
+	@Column(columnDefinition="text")
 	private String subject;
 	
-	@Column(length=5000)
-	@Field(index=Index.TOKENIZED)
+	@Column(columnDefinition="text")
 	private String description;
+
+	@Column(length=500)
+	private String creator;
 	
+	@Column(length=500)
 	private String publisher;
+	
+	@Column(length=500)
 	private String contributor;
+	
+	@Column(length=500)
 	private String date;
+	
+	@Column(length=500)
 	private String type;
+	
+	@Column(length=500)
 	private String format;
+	
+	@Column(length=500)
 	private String identifier;
+	
+	@Column(length=500)
 	private String source;
+	
+	@Column(length=500)
 	private String language;
+	
+	@Column(length=500)
 	private String relation;
+	
+	@Column(length=500)
 	private String coverage;
+	
+	@Column(length=500)
 	private String rights;
+	
+	@ManyToOne
+	private HarvesterDefinition harvesterDefinition;
 	
 	public String getTitle() {
 		return title;
@@ -126,6 +154,12 @@ public class DublinCoreDocument extends br.recomende.model.document.Document {
 	}
 	public void setRights(String rights) {
 		this.rights = rights;
+	}
+	public HarvesterDefinition getHarvesterDefinition() {
+		return harvesterDefinition;
+	}
+	public void setHarvesterDefinition(HarvesterDefinition harvesterDefinition) {
+		this.harvesterDefinition = harvesterDefinition;
 	}
 	
 	

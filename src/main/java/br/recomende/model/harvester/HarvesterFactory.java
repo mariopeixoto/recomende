@@ -20,7 +20,7 @@ public class HarvesterFactory {
 	}
 	
 	public DocumentHarvester instanceFor(HarvesterDefinition harvesterDefinition) {
-		Class<?> harvesterClass = harvesterDefinition.getHarvesterClass();
+		Class<?> harvesterClass = harvesterDefinition.getHarvesterType().getHarvesterClass();
 		try {
 			DocumentHarvester harvester = (DocumentHarvester) this.applicationContext.getBean(harvesterClass);
 			harvester.setUp(harvesterDefinition);

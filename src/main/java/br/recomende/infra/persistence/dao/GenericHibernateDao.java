@@ -31,13 +31,13 @@ public class GenericHibernateDao<Type,PK extends Serializable> implements Generi
 		return (Long) criteria.uniqueResult();
 	}
 
-	@Transactional(readOnly = false, propagation = Propagation.REQUIRED)
+	@Transactional(readOnly = false, propagation = Propagation.REQUIRED, rollbackFor=Throwable.class)
 	public void delete(PK identifier) {
 		Type object = this.findByPK(identifier);
 		getSession().delete(object);
 	}
 	
-	@Transactional(readOnly = false, propagation = Propagation.REQUIRED)
+	@Transactional(readOnly = false, propagation = Propagation.REQUIRED, rollbackFor=Throwable.class)
 	public void delete(Type object) {
 		getSession().lock(object, LockMode.NONE);
 		getSession().delete(object);
@@ -58,7 +58,7 @@ public class GenericHibernateDao<Type,PK extends Serializable> implements Generi
 		return criteria.list();
 	}
 
-	@Transactional(readOnly = false, propagation = Propagation.REQUIRED)
+	@Transactional(readOnly = false, propagation = Propagation.REQUIRED, rollbackFor=Throwable.class)
 	public Type persist(Type object) {
 		getSession().saveOrUpdate(object);
 		return object;

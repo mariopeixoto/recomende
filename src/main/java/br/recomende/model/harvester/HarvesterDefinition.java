@@ -2,8 +2,12 @@ package br.recomende.model.harvester;
 
 import java.util.Date;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 
 import org.hibernate.validator.NotNull;
 
@@ -11,7 +15,12 @@ import org.hibernate.validator.NotNull;
 public class HarvesterDefinition {
 	
 	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private Integer id;
+	
+	@NotNull
+	@Column(unique=true)
+	private String name;
 
 	@NotNull
 	private String endPoint;
@@ -19,16 +28,9 @@ public class HarvesterDefinition {
 	private Date lastHarvest;
 	
 	@NotNull
-	private Class<?> harvesterClass;
+	@ManyToOne
+	private HarvesterType harvesterType;
 	
-	public Integer getId() {
-		return id;
-	}
-
-	public void setId(Integer id) {
-		this.id = id;
-	}
-
 	public String getEndPoint() {
 		return endPoint;
 	}
@@ -45,12 +47,28 @@ public class HarvesterDefinition {
 		this.lastHarvest = lastHarvest;
 	}
 
-	public Class<?> getHarvesterClass() {
-		return harvesterClass;
+	public String getName() {
+		return name;
 	}
 
-	public void setHarvesterClass(Class<?> harvesterClass) {
-		this.harvesterClass = harvesterClass;
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public Integer getId() {
+		return id;
+	}
+
+	public void setId(Integer id) {
+		this.id = id;
+	}
+
+	public HarvesterType getHarvesterType() {
+		return harvesterType;
+	}
+
+	public void setHarvesterType(HarvesterType harvesterType) {
+		this.harvesterType = harvesterType;
 	}
 
 }

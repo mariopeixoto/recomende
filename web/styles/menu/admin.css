@@ -1,0 +1,25 @@
+@CHARSET "UTF-8";
+
+#adminmenu > #caption {
+	color: #003366;
+	text-decoration: underline;
+}
+
+#adminmenu > p {
+	text-align: center;
+	margin: 5px;
+}
+
+#adminmenu > p > button {
+	border: 1px solid #003366;
+	width: 150px;
+	cursor: pointer;
+	padding: 5px;
+	background-color: #336699;
+	color: #ffcc66;
+}
+
+#adminmenu > p > button:hover {
+	background-color: #6699cc;
+	color: #aa3300;
+}
