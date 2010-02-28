@@ -6,14 +6,31 @@
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link href="styles/recommend/recommend.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-	<c:forEach items="${documents}" var="document">
-		<p>
-			<strong>${document.title}</strong><br/>
-			<div style="color: red;">${document.description}</div>
-			<div style="color: blue;">${document.subject}</div>
-		</p>
-	</c:forEach>
+	<h3><fmt:message key="recommend" /></h3>
+	<div id="documents">
+		<c:forEach items="${documents}" var="document">
+			<div class="document">
+				<h4>
+					<c:choose>
+						<c:when test="${document.source eq null}">
+							${document.title}
+						</c:when>
+						<c:otherwise>
+							<a href="${document.source}">${document.title}</a>
+						</c:otherwise>
+					</c:choose>
+				</h4>
+				<div class="properties">
+					<h5><fmt:message key="authors" />: ${document.creator}</h5>
+					<h5><fmt:message key="identifier" />: ${document.identifier}</h5>
+					<h5><fmt:message key="pub.date" />: ${document.date}</h5>
+				</div>
+				<div class="description">${document.description}</div>
+			</div>
+		</c:forEach>
+	</div>
 </body>
 </html>

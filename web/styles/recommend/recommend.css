@@ -1,0 +1,65 @@
+@CHARSET "UTF-8";
+
+h3 {
+	text-align: center;
+	color: #336699;
+}
+
+#documents {
+	display: block;
+	width: 100%;
+	float: left;
+}
+
+.document {
+	float: left;
+	display: block;
+	margin: 40px;
+}
+
+.document > h4 {
+	padding: 8px;
+	text-align: center;
+	background-color: #336699;
+	margin: 0;
+}
+
+.document > h4 {
+	color: #ffebd1;
+}
+
+.document > h4 > a {
+	color: #ffebd1;
+	text-decoration: none;
+}
+
+.document > h4 > a:hover {
+	text-decoration: underline;
+}
+
+.properties {
+	margin: 0;
+	background-color: #ffebd1;
+	float: left;
+	width: 96%;
+	padding: 2% 
+}
+
+.properties > h5 {
+	display: block;
+	position: relative;
+	color: #6699cc;
+	margin: 2px;
+	border: 1px dashed #6699cc;
+	float: left;
+	padding: 8px;
+}
+
+.description {
+	background-color: #ffebd1;
+	font-size: medium;
+	color: #336699;
+	float: left;
+	width: 96%;
+	padding: 2%;
+}

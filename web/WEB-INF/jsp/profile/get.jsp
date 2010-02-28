@@ -56,7 +56,7 @@
 		var url = "profile";
 
 		function selectInputScore(id) {
-			return ".score input[term*='" + id + "']";
+			return ".score input[term='" + id + "']";
 		}
 
 		function updateTermWeight(term, weight) {
@@ -83,7 +83,7 @@
 			var div = $("#profile").prepend(data);
 
 			var input = selectInputScore(term);
-			$(".score div[term*='"+ term + "']").slider( {
+			$(".score div[term='"+ term + "']").slider( {
 					max: 1.0,
 					value: $(input).val(),
 					step: 0.01,
@@ -96,14 +96,14 @@
 					}
 			} );
 
-			$(".term button[term*='" + term + "']").button({
+			$(".term button[term='" + term + "']").button({
 				icons: {
 		            primary: 'ui-icon-trash'
 		        },
 		        text: false
 		    } );
 
-			$(".term button[term*='" + term + "']").click(
+			$(".term button[term='" + term + "']").click(
 				function () {
 					var term = $(this).attr("term");
 					removeTerm(term);
@@ -116,7 +116,7 @@
 
 		function cleanNewTerm() {
 			$("#newTerm-input").val('');
-			$(".score div[term*='newElement']").slider( { value: 0 } );
+			$(".score div[term='newElement']").slider( { value: 0 } );
 			$(selectInputSource("newElement")).val(0);
 		}
 	</script>
