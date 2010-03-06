@@ -4,6 +4,7 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.ManyToOne;
 
+import org.hibernate.search.annotations.Boost;
 import org.hibernate.search.annotations.Field;
 import org.hibernate.search.annotations.Index;
 import org.hibernate.search.annotations.Indexed;
@@ -17,13 +18,16 @@ public class DublinCoreDocument extends br.recomende.model.document.Document {
 	private static final long serialVersionUID = 803156250524041296L;
 	
 	@Field(index=Index.TOKENIZED)
+	@Boost(2.0F)
 	@Column(columnDefinition="text")
 	private String title;
 
 	@Column(columnDefinition="text")
+	@Field(index=Index.TOKENIZED)
 	private String subject;
 	
 	@Column(columnDefinition="text")
+	@Field(index=Index.TOKENIZED)
 	private String description;
 
 	@Column(columnDefinition="text")
@@ -35,7 +39,7 @@ public class DublinCoreDocument extends br.recomende.model.document.Document {
 	@Column(columnDefinition="text")
 	private String contributor;
 	
-	@Column(length=20)
+	@Column(length=40)
 	private String date;
 	
 	@Column(columnDefinition="text")

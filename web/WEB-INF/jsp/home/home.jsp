@@ -41,14 +41,18 @@
 		$(document).ready(function(){
 			configureAjaxLoading();
 			<c:forEach items="${roles}" var="role">
-				$.get("home/menu/${role}", {} ,loadMenu);
+				$.ajax({
+					url: 'home/menu/${role}',
+					async: false,
+					success: loadMenu
+				});
 			</c:forEach>
 	    });
 	</script>
 </head>
 <body>
 	<div id="holder">
-		<div id="menu" class="bordered">
+		<div id="menu">
 			<img src="images/logo-small.png"/>
 		</div>
 		<div id="contents">

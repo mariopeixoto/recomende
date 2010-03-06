@@ -9,6 +9,7 @@ import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.Id;
 import javax.persistence.ManyToMany;
+import javax.persistence.OrderBy;
 import javax.persistence.Table;
 
 import org.springframework.security.core.GrantedAuthority;
@@ -31,6 +32,7 @@ public class User implements UserDetails {
 	private Boolean active = true;
 	
 	@ManyToMany(fetch=FetchType.EAGER)
+	@OrderBy("authority")
 	private Set<Role> roles;
 	
 	@Embedded

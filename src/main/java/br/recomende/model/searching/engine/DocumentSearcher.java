@@ -50,7 +50,10 @@ public class DocumentSearcher implements ContentBasedSearchEngine {
 		}
 		Collections.sort(documents, new ScoredDocumentComparator());
 		List<Document> finalDocs = new ArrayList<Document>();
-		for (ScoredDocument scoredDocument : documents.subList(0, 5)) {
+		if (documents.size() > 10) {
+			documents = documents.subList(0, 10);
+		}
+		for (ScoredDocument scoredDocument : documents) {
 			finalDocs.add(scoredDocument.getDocument());
 		}
 		return finalDocs;
