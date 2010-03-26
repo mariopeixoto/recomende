@@ -1,4 +1,4 @@
-package br.recomende.model.harvester.dc;
+package br.recomende.model.document;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -23,11 +23,9 @@ public class DublinCoreDocument extends br.recomende.model.document.Document {
 	private String title;
 
 	@Column(columnDefinition="text")
-	@Field(index=Index.TOKENIZED)
 	private String subject;
 	
 	@Column(columnDefinition="text")
-	@Field(index=Index.TOKENIZED)
 	private String description;
 
 	@Column(columnDefinition="text")

@@ -11,8 +11,8 @@ import org.springframework.stereotype.Component;
 import org.xml.sax.SAXException;
 
 import br.recomende.infra.util.SpringScope;
+import br.recomende.model.document.DublinCoreDocument;
 import br.recomende.model.harvester.HarvesterDefinition;
-import br.recomende.model.harvester.dc.DublinCoreDocument;
 
 @Component
 @Scope(SpringScope.PROTOTYPE)

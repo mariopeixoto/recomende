@@ -12,17 +12,18 @@ import br.recomende.model.curriculum.CurriculumVitae;
 import br.recomende.model.curriculum.Language;
 import br.recomende.model.curriculum.LanguageSkill;
 import br.recomende.model.curriculum.Languages;
-import br.recomende.model.profile.Profile;
+import br.recomende.model.profile.TagSet;
+import br.recomende.model.recommender.TagSetMiner;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration("classpath:applicationContext.xml")
-public class DefaultProfileEngineTest {
+public class TagSuggestionTest {
 	
 	@Autowired
-	private DefaultProfileEngine profileEngine;
+	private TagSetMiner tagSuggestion;
 	
 	@Test
-	public void generate() throws Exception {
+	public void suggest() throws Exception {
 		CurriculumVitae curriculumVitae = new CurriculumVitae();
 		BibliographicProduction bibliographicProduction = new BibliographicProduction();
 		bibliographicProduction.setTitle("improved likelihood inference for the roughness parameter of the ga0 distribution");
@@ -37,8 +38,10 @@ public class DefaultProfileEngineTest {
 		english.setType(Languages.EN);
 		english.setReadSkill(LanguageSkill.GOOD);
 		curriculumVitae.addLanguage(english);
-		Profile profile = profileEngine.generate(curriculumVitae);
+		TagSet profile = tagSuggestion.mine(curriculumVitae);
 		Assert.assertNotNull(profile);
+		TagSet text = tagSuggestion.mine("improved likelihood inference for the roughness parameter of the ga0 distribution");
+		Assert.assertNotNull(text);
 	}
 	
 }

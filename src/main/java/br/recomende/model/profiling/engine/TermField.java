@@ -7,7 +7,8 @@ import java.util.Map;
 public enum TermField {
 	
 	TITLE("title"),
-	KEYWORDS("keywords");
+	KEYWORDS("keywords"),
+	TEXT("text");
 	
 	private String name;
 	private static final Map<String,TermField> map = new HashMap<String, TermField>();

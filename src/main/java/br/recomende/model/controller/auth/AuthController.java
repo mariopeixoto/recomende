@@ -18,19 +18,19 @@ import br.recomende.infra.user.User;
 import br.recomende.infra.util.SHA1;
 import br.recomende.model.curriculum.CurriculumVitae;
 import br.recomende.model.curriculum.parser.CurriculumParser;
-import br.recomende.model.profile.Profile;
-import br.recomende.model.profiling.engine.api.ProfileEngine;
+import br.recomende.model.profile.TagSet;
+import br.recomende.model.recommender.TagSetMiner;
 import br.recomende.model.repository.UserRepository;
 
 @Controller
 public class AuthController {
 	
-	private ProfileEngine profileEngine;
+	private TagSetMiner tagSuggestion;
 	private UserRepository userRepository;
 	
 	@Autowired
-	public AuthController(ProfileEngine profileEngine, UserRepository userRepository) {
-		this.profileEngine = profileEngine;
+	public AuthController(TagSetMiner tagSuggestion, UserRepository userRepository) {
+		this.tagSuggestion = tagSuggestion;
 		this.userRepository = userRepository;
 	}
 	
@@ -52,7 +52,7 @@ public class AuthController {
 		try {
 			CurriculumParser curriculumParser = new CurriculumParser();
 			CurriculumVitae curriculumVitae = curriculumParser.parse(curriculum.getInputStream());
-			Profile profile = this.profileEngine.generate(curriculumVitae);
+			TagSet profile = this.tagSuggestion.mine(curriculumVitae);
 			user.setProfile(profile);
 		} catch(Exception e) {
 			//FIXME Corrigir tratamento de exception

@@ -3,18 +3,17 @@ package br.recomende.infra.persistence.dao;
 import java.util.Collection;
 import java.util.List;
 
-import org.apache.lucene.index.Term;
-import org.apache.lucene.search.BooleanClause;
-import org.apache.lucene.search.BooleanQuery;
-import org.apache.lucene.search.FuzzyQuery;
+import org.apache.lucene.search.Query;
 import org.hibernate.search.FullTextQuery;
 import org.hibernate.search.FullTextSession;
 import org.hibernate.search.Search;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
 import br.recomende.model.document.Document;
+import br.recomende.model.recommender.QueryGenerator;
 import br.recomende.model.repository.DocumentRepository;
 import br.recomende.model.searching.engine.DocumentSearchResultTransformer;
 import br.recomende.model.searching.engine.ScoredDocument;
@@ -23,24 +22,19 @@ import br.recomende.model.searching.engine.ScoredDocument;
 public class DocumentDao extends RepositoryWrapper<Document, Integer>
 		implements DocumentRepository {
 	
-	public DocumentDao() {
+	private QueryGenerator queryGenerator;
+	
+	@Autowired
+	public DocumentDao(QueryGenerator queryGenerator) {
 		super(Document.class);
+		this.queryGenerator = queryGenerator;
 	}
 
 	@SuppressWarnings("unchecked")
 	@Override
 	public List<ScoredDocument> search(String term) {
 		FullTextSession fullTextSession = Search.getFullTextSession(super.getSession());
-		Term titleTerm = new Term("title", term);
-		Term descriptionTerm = new Term("description", term);
-		Term subjectTerm = new Term("subject", term);
-		FuzzyQuery titleQuery = new FuzzyQuery(titleTerm);
-		FuzzyQuery descriptionQuery = new FuzzyQuery(descriptionTerm);
-		FuzzyQuery subjectQuery = new FuzzyQuery(subjectTerm);
-		BooleanQuery luceneQuery = new BooleanQuery();
-		luceneQuery.add(titleQuery, BooleanClause.Occur.SHOULD);
-		luceneQuery.add(descriptionQuery, BooleanClause.Occur.SHOULD);
-		luceneQuery.add(subjectQuery, BooleanClause.Occur.SHOULD);
+		Query luceneQuery = this.queryGenerator.generate(term);
 		FullTextQuery query = fullTextSession.createFullTextQuery(luceneQuery, Document.class);
 		query.setProjection(FullTextQuery.SCORE, FullTextQuery.THIS);
 		query.setResultTransformer(new DocumentSearchResultTransformer());

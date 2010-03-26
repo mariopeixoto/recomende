@@ -49,12 +49,7 @@ public class HarvestDocumentCommand implements Runnable {
 		TransactionStatus transaction = transactionManager.getTransaction(transactionDefinition);
 		try {
 			for (Document document : documents) {
-				//try {
-					this.documentRepository.put(document);
-				//} catch (Exception e) {
-				//	log.debug(e.getMessage());
-				//	continue;
-				//}
+				this.documentRepository.put(document);
 			}
 			if (documents.size() > 0) {
 				log.info(documents.size() + " successfully added to repository and indexed");

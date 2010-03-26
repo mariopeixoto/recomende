@@ -1,6 +1,6 @@
 package br.recomende.model.controller.recommend;
 
-import java.util.List;
+import java.util.Collection;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.context.SecurityContextHolder;
@@ -10,22 +10,23 @@ import org.springframework.web.servlet.ModelAndView;
 
 import br.recomende.infra.user.User;
 import br.recomende.model.document.Document;
-import br.recomende.model.searching.engine.api.SearchEngine;
+import br.recomende.model.recommender.DocumentSearcher;
+import br.recomende.model.recommender.api.SearchException;
 
 @Controller
 public class RecommendController {
 	
-	private SearchEngine searchEngine;
+	private DocumentSearcher searcher;
 	
 	@Autowired
-	public RecommendController(SearchEngine searchEngine) {
-		this.searchEngine = searchEngine;
+	public RecommendController(DocumentSearcher searcher) {
+		this.searcher = searcher;
 	}
 
 	@RequestMapping(value="/recommend")
-	public ModelAndView recommend() {
+	public ModelAndView recommend() throws SearchException {
 		User user = this.getPrincipal();
-		List<Document> documents = this.searchEngine.search(user.getProfile());
+		Collection<Document> documents = this.searcher.search(user.getProfile());
 		ModelAndView modelAndView = new ModelAndView("recommend/recommend");
 		modelAndView.addObject("documents", documents);
 		return modelAndView;

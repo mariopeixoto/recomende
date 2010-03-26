@@ -1,7 +1,6 @@
 package br.recomende.model.searching.engine;
 
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
@@ -9,37 +8,36 @@ import java.util.Map;
 import java.util.Map.Entry;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Scope;
-import org.springframework.stereotype.Service;
 
-import br.recomende.infra.util.SpringScope;
 import br.recomende.model.document.Document;
-import br.recomende.model.profile.Profile;
+import br.recomende.model.document.DocumentList;
+import br.recomende.model.profile.Tag;
+import br.recomende.model.profile.TagSet;
+import br.recomende.model.recommender.api.annotation.BeginMethod;
+import br.recomende.model.recommender.api.annotation.Searcher;
 import br.recomende.model.repository.DocumentRepository;
-import br.recomende.model.searching.engine.api.ContentBasedSearchEngine;
 
-@Service
-@Scope(SpringScope.PROTOTYPE)
-public class DocumentSearcher implements ContentBasedSearchEngine {
+@Searcher
+public class ProfileBasedDocumentSearcher {
 	
 	private DocumentRepository documentRepository;
 	
 	@Autowired
-	public DocumentSearcher(DocumentRepository documentRepository) {
+	public ProfileBasedDocumentSearcher(DocumentRepository documentRepository) {
 		this.documentRepository = documentRepository;
 	}
-
-	public List<Document> search(Profile profile) {
+	
+	@BeginMethod
+	public DocumentList search(TagSet tags) {
 		Map<Document, Double> documentMap = new HashMap<Document, Double>();
-		Collection<Entry<String, Double>> elements = profile.getElements();
-		for (Entry<String, Double> element : elements) {
-			List<ScoredDocument> scoredDocuments = this.documentRepository.search(element.getKey());
+		for (Tag element : tags) {
+			List<ScoredDocument> scoredDocuments = this.documentRepository.search(element.getTag());
 			for (ScoredDocument scoredDocument : scoredDocuments) {
 				Double score = documentMap.get(scoredDocument.getDocument());
 				if (score == null) {
-					score = scoredDocument.getScore()*element.getValue();
+					score = scoredDocument.getScore()*element.getWeight();
 				} else {
-					score += scoredDocument.getScore()*element.getValue();
+					score += scoredDocument.getScore()*element.getWeight();
 				}
 				documentMap.put(scoredDocument.getDocument(), score);
 			}
@@ -50,13 +48,13 @@ public class DocumentSearcher implements ContentBasedSearchEngine {
 		}
 		Collections.sort(documents, new ScoredDocumentComparator());
 		List<Document> finalDocs = new ArrayList<Document>();
-		if (documents.size() > 10) {
-			documents = documents.subList(0, 10);
+		if (documents.size() > 5) {
+			documents = documents.subList(0, 5);
 		}
 		for (ScoredDocument scoredDocument : documents) {
 			finalDocs.add(scoredDocument.getDocument());
 		}
-		return finalDocs;
+		return new DocumentList(finalDocs);
 	}
 	
 }

@@ -135,12 +135,12 @@
 	</div>
 	<div id="profile">
 		<c:forEach items="${elements}" var="element">
-			<div class="term" id="${element.key}">
-				<button term="${element.key}" class="small"><fmt:message key="delete"/></button>
-				<div class="description">${element.key}</div>
+			<div class="term" id="${element.tag}">
+				<button term="${element.tag}" class="small"><fmt:message key="delete"/></button>
+				<div class="description">${element.tag}</div>
 				<div class="score small">
-					<div term="${element.key}"></div>
-					<input type="text" term="${element.key}" value="${element.value}"/>
+					<div term="${element.tag}"></div>
+					<input type="text" term="${element.tag}" value="${element.weight}"/>
 				</div>
 			</div>
 		</c:forEach>

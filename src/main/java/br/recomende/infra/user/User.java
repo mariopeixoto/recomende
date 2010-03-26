@@ -16,7 +16,7 @@ import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
 import br.recomende.infra.util.SHA1;
-import br.recomende.model.profile.Profile;
+import br.recomende.model.profile.TagSet;
 
 @Entity
 @Table(name="users")
@@ -36,7 +36,7 @@ public class User implements UserDetails {
 	private Set<Role> roles;
 	
 	@Embedded
-	private Profile profile;
+	private TagSet profile;
 	
 	private String firstName;
 	
@@ -47,6 +47,7 @@ public class User implements UserDetails {
 	private String email;
 
 	public User() {
+		this.profile = new TagSet();
 	}
 	
 	public User(String username, String password, Boolean active, Set<Role> roles) {
@@ -91,11 +92,11 @@ public class User implements UserDetails {
 		return this.active;
 	}
 
-	public Profile getProfile() {
+	public TagSet getProfile() {
 		return profile;
 	}
 
-	public void setProfile(Profile profile) {
+	public void setProfile(TagSet profile) {
 		this.profile = profile;
 	}
 

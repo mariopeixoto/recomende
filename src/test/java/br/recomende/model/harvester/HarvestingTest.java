@@ -16,7 +16,7 @@ import org.xml.sax.SAXException;
 
 import br.recomende.infra.http.GetFacade;
 import br.recomende.infra.util.DateConversionHelper;
-import br.recomende.model.harvester.dc.DublinCoreDocument;
+import br.recomende.model.document.DublinCoreDocument;
 import br.recomende.model.harvester.dc.OAIDublinCoreHarvester;
 import br.recomende.model.harvester.dc.parser.OAIListRecordsParser;
 

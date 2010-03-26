@@ -28,6 +28,7 @@ public class TermScorer {
 		TERM_MULTIPLIER = new HashMap<TermField, Double>();
 		TERM_MULTIPLIER.put(TermField.TITLE, 1.0);
 		TERM_MULTIPLIER.put(TermField.KEYWORDS, 3.0);
+		TERM_MULTIPLIER.put(TermField.TEXT, 1.0);
 	}
 	
 	@Autowired
