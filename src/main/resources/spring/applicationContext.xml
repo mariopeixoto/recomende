@@ -17,7 +17,7 @@
 	<context:annotation-config />
 
 	<!-- Scans this application for @Components to deploy as beans -->
-	<context:component-scan base-package="br.recomende" />
+	<context:component-scan base-package="br" />
 	
 	<!-- Application Message Bundle -->
 	<bean id="messageSource"
