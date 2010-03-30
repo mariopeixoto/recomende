@@ -3,7 +3,6 @@ package br.recomende.model.controller.recommend;
 import java.util.Collection;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.scheduling.annotation.Async;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
@@ -13,7 +12,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
 import br.ic.grow.retiblog.tagParser.FragmentalTagParser;
-import br.ic.grow.retriblog.application.LigeiroApplication;
 import br.ic.grow.retriblog.blogCrawler.BlogCrawler;
 import br.recomende.infra.user.User;
 import br.recomende.model.document.BlogPostDocument;

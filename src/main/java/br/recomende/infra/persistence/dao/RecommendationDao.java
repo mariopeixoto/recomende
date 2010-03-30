@@ -6,6 +6,7 @@ import org.hibernate.Criteria;
 import org.hibernate.Session;
 import org.hibernate.criterion.Restrictions;
 import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Transactional;
 
 import br.recomende.infra.user.User;
 import br.recomende.model.document.Document;
@@ -30,6 +31,7 @@ public class RecommendationDao extends RepositoryWrapper<Recommendation, Integer
 	}
 
 	@Override
+	@Transactional(readOnly = false)
 	public void putByUser(User user, List<Document> documents) {
 		for (Document document : documents) {
 			Recommendation recommendation = new Recommendation();

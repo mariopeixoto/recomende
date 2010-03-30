@@ -7,6 +7,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import br.recomende.model.document.Document;
@@ -22,6 +24,8 @@ public class ProfileBasedDocumentSearcher {
 	
 	private DocumentRepository documentRepository;
 	
+	private static Logger log = LoggerFactory.getLogger(ProfileBasedDocumentSearcher.class);
+	
 	@Autowired
 	public ProfileBasedDocumentSearcher(DocumentRepository documentRepository) {
 		this.documentRepository = documentRepository;
@@ -29,11 +33,15 @@ public class ProfileBasedDocumentSearcher {
 	
 	@BeginMethod
 	public DocumentList search(TagSet tagSet, Class<?> documentClass) {
+		log.info("Document Class to Search: " + documentClass.getCanonicalName());
 		TagSet tags = (TagSet) tagSet.clone();
 		tags.crop(0.5);
+		log.info("Tags size: " + tags.size());
 		Map<Document, Double> documentMap = new HashMap<Document, Double>();
 		for (Tag element : tags) {
+			log.info("Searching Documents");
 			List<ScoredDocument> scoredDocuments = this.documentRepository.search(element.getTag(), documentClass);
+			log.info("Documents founded: " + scoredDocuments.size());
 			for (ScoredDocument scoredDocument : scoredDocuments) {
 				Double score = documentMap.get(scoredDocument.getDocument());
 				if (score == null) {
@@ -41,6 +49,7 @@ public class ProfileBasedDocumentSearcher {
 				} else {
 					score += scoredDocument.getScore()*element.getWeight();
 				}
+				log.info("Adding document to list");
 				documentMap.put(scoredDocument.getDocument(), score);
 			}
 		}
@@ -48,11 +57,14 @@ public class ProfileBasedDocumentSearcher {
 		for (Entry<Document,Double> element : documentMap.entrySet()) {
 			documents.add(new ScoredDocument(element.getKey(), element.getValue()));
 		}
+		log.info("Sorting results");
 		Collections.sort(documents, new ScoredDocumentComparator());
+		log.info("Results sorted");
 		List<Document> finalDocs = new ArrayList<Document>();
 		for (ScoredDocument scoredDocument : documents) {
 			finalDocs.add(scoredDocument.getDocument());
 		}
+		log.info("Returning finalDocs ("+finalDocs.size()+")");
 		return new DocumentList(finalDocs);
 	}
 	
