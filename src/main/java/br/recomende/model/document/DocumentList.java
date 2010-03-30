@@ -18,5 +18,14 @@ public class DocumentList extends ArrayList<Document> {
 	public DocumentList(int initialCapacity) {
 		super(initialCapacity);
 	}
+	
+	public int contains(Integer id, Class<?> documentClass) {
+		for (Document document : this) {
+			if (document.getId().equals(id) && document.getClass().equals(documentClass)) {
+				return this.indexOf(document);
+			}
+		}
+		return -1;
+	}
 
 }

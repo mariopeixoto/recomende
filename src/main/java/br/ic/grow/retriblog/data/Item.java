@@ -20,7 +20,7 @@ public class Item {
 //	TechnoratiWeblog weblog;
 
 	@Id @GeneratedValue(strategy=GenerationType.AUTO)
-	@Column(name = "ID")
+	@Column(name = "id")
 	public Integer getId() {
 		return id;
 	}
@@ -36,7 +36,7 @@ public class Item {
 	public void setTitle(String title) {
 		this.title = title;
 	}
-	@Column(length=2000)
+	@Column(columnDefinition = "text")
 	public String getExcerpt() {
 		return excerpt;
 	}
@@ -60,7 +60,7 @@ public class Item {
 	public void setPostupdate(String postupdate) {
 		this.postupdate = postupdate;
 	}
-	@Column(length=2147483647)
+	@Column(columnDefinition = "text")
 	public String getPermalink() {
 		return permalink;
 	}
@@ -68,7 +68,7 @@ public class Item {
 	public void setPermalink(String permalink) {
 		this.permalink = permalink;
 	}
-	@Column(length=2147483647)
+	@Column(columnDefinition = "text")
 	public String getCompleteText() {
 		return completeText;
 	}
@@ -76,7 +76,7 @@ public class Item {
 	public void setCompleteText(String completeText) {
 		this.completeText = completeText;
 	}
-	@Column(length=2147483647)
+	@Column(columnDefinition = "text")
 	public String getAnalyzedText() {
 		return analyzedText;
 	}
@@ -84,7 +84,7 @@ public class Item {
 	public void setAnalyzedText(String analyzedText) {
 		this.analyzedText = analyzedText;
 	}
-	
+	@Column(columnDefinition = "text")
 	public String getHtmlText() {
 		return htmlText;
 	}

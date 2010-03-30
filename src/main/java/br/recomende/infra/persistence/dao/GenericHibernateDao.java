@@ -67,5 +67,5 @@ public class GenericHibernateDao<Type,PK extends Serializable> implements Generi
 	protected Session getSession() {
 		return (Session) this.entityManager.getDelegate();
 	}
-
+	
 }

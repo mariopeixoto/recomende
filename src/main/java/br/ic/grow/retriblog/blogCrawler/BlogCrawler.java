@@ -6,6 +6,9 @@ import java.io.IOException;
 import java.util.ArrayList;
 
 import org.json.JSONException;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.scheduling.annotation.Async;
+import org.springframework.stereotype.Service;
 
 import br.ic.grow.retiblog.index.Indexing;
 import br.ic.grow.retiblog.index.IndexingControler;
@@ -27,6 +30,7 @@ import br.ic.grow.retriblog.utilities.GoogleApi;
 import br.ic.grow.retriblog.utilities.Utilities;
 import br.ic.grow.retriblog.utilities.UtilitiesControler;
 
+@Service
 public class BlogCrawler {
 	
 	private ArrayList<Item> itensList;
@@ -46,7 +50,7 @@ public class BlogCrawler {
 	private ApplicationControler applicationControler;
 	private TagParserControler tagParserControler;
 	
-	
+	@Autowired
 	public BlogCrawler(Application main) {
 		
 		itensList = new ArrayList<Item>();
@@ -86,7 +90,11 @@ public class BlogCrawler {
 				}
 				
 				try {
-					blogLanguage = utilities.languageDetect(excerptWithoutWhite);
+					String languageDetectText = excerptWithoutWhite;
+					if (languageDetectText.length() > 1000) {
+						languageDetectText = languageDetectText.substring(0, 1000);
+					}
+					blogLanguage = utilities.languageDetect(languageDetectText);
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
@@ -100,7 +108,7 @@ public class BlogCrawler {
 							
 							cleanHtml.setText(textWithHtml);
 							textWithoutHtml = preprocessingControler.analyzeStringRun(cleanHtml);
-							System.out.println(textWithoutHtml);
+							//System.out.println(textWithoutHtml);
 							itensList.get(i).setCompleteText(textWithoutHtml);
 							index.setIndexDir(System.getProperty("user.dir") +
 									System.getProperty("file.separator") + "configuration");
@@ -115,10 +123,10 @@ public class BlogCrawler {
 							if(!persistenceControler.checarPermalinkRun(persistence)){
 								itensList.get(i).setCategory(tags.get(aux));
 								persistence.setItem(itensList.get(i));
-								persistenceControler.salvarItemRun(persistence);
+								persistenceControler.salvarItemItemRun(persistence);
 								
 							}else {
-								break;
+								continue;
 							}
 						}
 						

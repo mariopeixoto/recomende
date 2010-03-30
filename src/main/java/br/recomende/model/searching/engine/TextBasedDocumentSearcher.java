@@ -13,19 +13,19 @@ import br.recomende.model.recommender.api.annotation.Searcher;
 public class TextBasedDocumentSearcher {
 
 	private ProfileBasedDocumentSearcher profileBasedDocumentSearcher;
-	private TagSetMiner tagSuggestion;
+	private TagSetMiner tagSetMiner;
 	
 	@Autowired
 	public TextBasedDocumentSearcher(ProfileBasedDocumentSearcher profileBasedDocumentSearcher,
-			TagSetMiner tagSuggestion) {
+			TagSetMiner tagSetMiner) {
 		this.profileBasedDocumentSearcher = profileBasedDocumentSearcher;
-		this.tagSuggestion = tagSuggestion;
+		this.tagSetMiner = tagSetMiner;
 	}
 	
 	@BeginMethod
-	public DocumentList search(String text) throws MineException {
-		TagSet tagSet = this.tagSuggestion.mine(text);
-		return this.profileBasedDocumentSearcher.search(tagSet);
+	public DocumentList search(String text, Class<?> documentClass) throws MineException {
+		TagSet tagSet = this.tagSetMiner.mine(text);
+		return this.profileBasedDocumentSearcher.search(tagSet, documentClass);
 	}
 	
 }

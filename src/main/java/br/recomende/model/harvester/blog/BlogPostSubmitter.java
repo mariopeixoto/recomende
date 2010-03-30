@@ -19,10 +19,12 @@ public class BlogPostSubmitter implements IBlogPostSubmitter {
 		this.documentRepository = documentRepository;
 	}
 	
-	public void submit(String blogPostText, String url) {
+	public void submit(String title, String date, String blogPostText, String url) {
 		BlogPostDocument blogPostDocument = new BlogPostDocument();
 		blogPostDocument.setText(blogPostText);
 		blogPostDocument.setUrl(url);
+		blogPostDocument.setTitle(title);
+		blogPostDocument.setDate(date);
 		this.documentRepository.put(blogPostDocument);
 	}
 

@@ -3,22 +3,27 @@ package br.ic.grow.retriblog.persistence;
 import java.util.List;
 
 import br.ic.grow.retriblog.data.Item;
+import br.recomende.model.harvester.blog.IBlogPostSubmitter;
 
 public class HibernatePersistence extends Persistence {
 	
 	private ItemRepository itemRepository;
 	
-	public HibernatePersistence(ItemRepository itemRepository) {
+	private IBlogPostSubmitter blogPostSubmitter;
+	
+	public HibernatePersistence(ItemRepository itemRepository, IBlogPostSubmitter blogPostSubmitter) {
 		super();
 		this.itemRepository = itemRepository;
+		this.blogPostSubmitter = blogPostSubmitter;
 	}
 
 	public HibernatePersistence(String title, String excerpt, String created,
 			String postupdate, String permalink, String completeText,
-			String analyzedText, String category, Item item, ItemRepository itemRepository) {
+			String analyzedText, String category, Item item, ItemRepository itemRepository, IBlogPostSubmitter blogPostSubmitter) {
 		super(title, excerpt, created, postupdate, permalink, completeText,
 				analyzedText, category, item);
 		this.itemRepository = itemRepository;
+		this.blogPostSubmitter = blogPostSubmitter;
 	}
 
 	@Override
@@ -50,11 +55,14 @@ public class HibernatePersistence extends Persistence {
 		item.setCategory(category);
 		
 		this.itemRepository.put(item);
+		
+		this.blogPostSubmitter.submit(title, created, excerpt, permalink);
 	}
 
 	@Override
 	void salvarItemItem() {
 		this.itemRepository.put(this.item);
+		this.blogPostSubmitter.submit(this.item.getTitle(), this.item.getCreated(), this.item.getExcerpt(), this.item.getPermalink());
 	}
 
 }

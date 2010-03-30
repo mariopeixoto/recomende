@@ -28,10 +28,12 @@ public class ProfileBasedDocumentSearcher {
 	}
 	
 	@BeginMethod
-	public DocumentList search(TagSet tags) {
+	public DocumentList search(TagSet tagSet, Class<?> documentClass) {
+		TagSet tags = (TagSet) tagSet.clone();
+		tags.crop(0.5);
 		Map<Document, Double> documentMap = new HashMap<Document, Double>();
 		for (Tag element : tags) {
-			List<ScoredDocument> scoredDocuments = this.documentRepository.search(element.getTag());
+			List<ScoredDocument> scoredDocuments = this.documentRepository.search(element.getTag(), documentClass);
 			for (ScoredDocument scoredDocument : scoredDocuments) {
 				Double score = documentMap.get(scoredDocument.getDocument());
 				if (score == null) {
@@ -48,9 +50,6 @@ public class ProfileBasedDocumentSearcher {
 		}
 		Collections.sort(documents, new ScoredDocumentComparator());
 		List<Document> finalDocs = new ArrayList<Document>();
-		if (documents.size() > 5) {
-			documents = documents.subList(0, 5);
-		}
 		for (ScoredDocument scoredDocument : documents) {
 			finalDocs.add(scoredDocument.getDocument());
 		}

@@ -23,9 +23,9 @@ public class ProfileAndTextBasedDocumentSearcher {
 	}
 	
 	@BeginMethod
-	public DocumentList search(TagSet tagSet, String text) throws MineException {
+	public DocumentList search(TagSet tagSet, String text, Class<?> documentClass) throws MineException {
 		TagSet tags = tagSet.merge(this.tagSetMiner.mine(text));
-		return this.profileBasedDocumentSearcher.search(tags);
+		return this.profileBasedDocumentSearcher.search(tags, documentClass);
 	}
 	
 }

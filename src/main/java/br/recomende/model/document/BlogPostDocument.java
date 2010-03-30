@@ -17,8 +17,13 @@ public class BlogPostDocument extends Document {
 	private String url;
 	
 	@Field(index = Index.TOKENIZED)
+	private String title;
+	
+	@Field(index = Index.TOKENIZED)
 	@Column(columnDefinition = "text")
 	private String text;
+
+	private String date;
 
 	public String getUrl() {
 		return url;
@@ -34,6 +39,22 @@ public class BlogPostDocument extends Document {
 
 	public void setText(String text) {
 		this.text = text;
+	}
+
+	public String getTitle() {
+		return title;
+	}
+
+	public void setTitle(String title) {
+		this.title = title;
+	}
+
+	public String getDate() {
+		return date;
+	}
+
+	public void setDate(String creation) {
+		this.date = creation;
 	}
 	
 }

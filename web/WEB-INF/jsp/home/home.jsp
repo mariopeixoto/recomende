@@ -38,8 +38,13 @@
 			$("div#menu").append(data);
 		}
 
+		function loadHome() {
+			$.get("recommend", showContent);
+		}
+		
 		$(document).ready(function(){
 			configureAjaxLoading();
+			//loadHome();
 			<c:forEach items="${roles}" var="role">
 				$.ajax({
 					url: 'home/menu/${role}',

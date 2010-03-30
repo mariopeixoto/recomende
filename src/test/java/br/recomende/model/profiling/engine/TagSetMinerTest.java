@@ -17,7 +17,7 @@ import br.recomende.model.recommender.TagSetMiner;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration("classpath:applicationContext.xml")
-public class TagSuggestionTest {
+public class TagSetMinerTest {
 	
 	@Autowired
 	private TagSetMiner tagSuggestion;
