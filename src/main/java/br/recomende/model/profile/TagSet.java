@@ -178,7 +178,7 @@ public class TagSet implements Serializable, Cloneable, Set<Tag> {
 	}
 	
 	public void crop(Double weight) {
-		for (Tag tag : this.tags) {
+		for (Tag tag : this.tagMap.values()) {
 			if (tag.getWeight() < weight) {
 				this.remove(tag);
 			}
