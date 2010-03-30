@@ -9,4 +9,6 @@ public interface DocumentRepository extends GenericRepository<Document, Integer>
 	
 	List<ScoredDocument> search(String term, Class<?> documentClass);
 	
+	void indexAll();
+	
 }

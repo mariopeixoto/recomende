@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -17,9 +18,17 @@ import br.recomende.infra.exception.http.ForbiddenResourceException;
 import br.recomende.infra.user.Role;
 import br.recomende.infra.user.Roles;
 import br.recomende.infra.user.User;
+import br.recomende.model.repository.DocumentRepository;
 
 @Controller
 public class HomeController {
+	
+	private DocumentRepository documentRepository;
+	
+	@Autowired
+	public HomeController(DocumentRepository documentRepository) {
+		this.documentRepository = documentRepository;
+	}
 
 	@RequestMapping(value="/home", method=RequestMethod.GET)
 	public ModelAndView home() {
@@ -48,6 +57,11 @@ public class HomeController {
 		} else {
 			throw new ForbiddenResourceException();
 		}
+	}
+	
+	@RequestMapping(value = "/reindex")
+	public void reindexDatabase() {
+		this.documentRepository.indexAll();
 	}
 	
 	private User getPrincipal() {
