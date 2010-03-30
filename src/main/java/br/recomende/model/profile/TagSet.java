@@ -2,12 +2,12 @@ package br.recomende.model.profile;
 
 import java.io.Serializable;
 import java.util.Collection;
-import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Map;
 import java.util.Set;
 import java.util.Map.Entry;
+import java.util.concurrent.ConcurrentHashMap;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Embeddable;
@@ -23,7 +23,7 @@ public class TagSet implements Serializable, Cloneable, Set<Tag> {
 	
 	private static final long serialVersionUID = 3018693451709969007L;
 	
-	private Map<String,Tag> tagMap;
+	private ConcurrentHashMap<String,Tag> tagMap;
 	
 	private Set<Tag> tags;
 
@@ -41,7 +41,7 @@ public class TagSet implements Serializable, Cloneable, Set<Tag> {
 	}
 
 	public TagSet() {
-		this.tagMap = new HashMap<String, Tag>();
+		this.tagMap = new ConcurrentHashMap<String, Tag>();
 		this.tags = new HashSet<Tag>();
 	}
 	
@@ -160,7 +160,7 @@ public class TagSet implements Serializable, Cloneable, Set<Tag> {
 	public Object clone() {
 		TagSet clone = new TagSet();
 		clone.tags = new HashSet<Tag>(this.tags);
-		clone.tagMap = new HashMap<String, Tag>(this.tagMap);
+		clone.tagMap = new ConcurrentHashMap<String, Tag>(this.tagMap);
 		return clone;
 	}
 	
