@@ -1,5 +1,8 @@
 package br.recomende.model.document;
 
+import java.util.HashMap;
+import java.util.Map;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 
@@ -56,5 +59,26 @@ public class BlogPostDocument extends Document {
 	public void setDate(String creation) {
 		this.date = creation;
 	}
-	
+
+	@Override
+	public String getDescription() {
+		if (this.text.length() > 1000) {
+			return this.text.substring(0, 1000) + "...";
+		} else {
+			return this.text;
+		}
+	}
+
+	@Override
+	public Map<String, String> getProperties() {
+		Map<String, String> properties = new HashMap<String, String>();
+		properties.put("pub.date", this.date);
+		return properties;
+	}
+
+	@Override
+	public String getSource() {
+		return this.url;
+	}
+
 }

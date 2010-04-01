@@ -1,5 +1,8 @@
 package br.recomende.model.document;
 
+import java.util.HashMap;
+import java.util.Map;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.ManyToOne;
@@ -160,6 +163,14 @@ public class DublinCoreDocument extends br.recomende.model.document.Document {
 	}
 	public void setHarvesterDefinition(HarvesterDefinition harvesterDefinition) {
 		this.harvesterDefinition = harvesterDefinition;
+	}
+	@Override
+	public Map<String, String> getProperties() {
+		Map<String,String> properties = new HashMap<String, String>();
+		properties.put("authors", this.creator);
+		properties.put("identifier", this.identifier);
+		properties.put("pub.date", this.date);
+		return properties;
 	}
 	
 	

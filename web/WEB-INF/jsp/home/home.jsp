@@ -38,13 +38,16 @@
 			$("div#menu").append(data);
 		}
 
-		function loadHome() {
-			$.get("recommend", showContent);
+		function loadRecommendations(msg) {
+			var answer = confirm(msg);
+			if(answer) {
+				$.get("recommend", showContent);
+			}
 		}
 		
 		$(document).ready(function(){
 			configureAjaxLoading();
-			//loadHome();
+			
 			<c:forEach items="${roles}" var="role">
 				$.ajax({
 					url: 'home/menu/${role}',
@@ -55,7 +58,7 @@
 	    });
 	</script>
 </head>
-<body>
+<body onload="loadRecommendations('<fmt:message key="get.recommendations" />')">
 	<div id="holder">
 		<div id="menu">
 			<img src="images/logo-small.png"/>

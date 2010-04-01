@@ -22,17 +22,12 @@ public class DocumentSearchResultTransformer implements ResultTransformer{
 
 	@Override
 	public Object transformTuple(Object[] values, String[] params) {
-		log.info("Values Size: " + values.length);
-		log.info("Params Size: " + params.length);
 		ScoredDocument scoredDocument = new ScoredDocument();
 		for(int i = 0;i < params.length;i++) {
 			String param = params[i];
-			log.info("Param: " + param);
 			if (FullTextQuery.THIS.equals(param)) {
-				log.info("Document Id: " + ((Document)values[i]).getId());
 				scoredDocument.setDocument((Document)values[i]);
 			} else if (FullTextQuery.SCORE.equals(param)) {
-				log.info("Document Score: " + ((Float)values[i]).doubleValue());
 				scoredDocument.setScore(((Float)values[i]).doubleValue());
 			}
 		}

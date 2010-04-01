@@ -1,6 +1,7 @@
 package br.recomende.model.document;
 
 import java.io.Serializable;
+import java.util.Map;
 
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -22,7 +23,15 @@ public abstract class Document implements Serializable {
 	public Integer getId() {
 		return id;
 	}
-
+	
+	public abstract String getSource();
+	
+	public abstract Map<String, String> getProperties();
+	
+	public abstract String getTitle();
+	
+	public abstract String getDescription();
+	
 	@Override
 	public int hashCode() {
 		final int prime = 31;

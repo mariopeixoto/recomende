@@ -1,0 +1,19 @@
+@CHARSET "UTF-8";
+
+h3 {
+	text-align: center;
+	color: #336699;
+}
+
+ul {
+	padding-left: 30px;
+}
+
+li {
+	list-style: none;
+	display: inline;
+}
+
+form div {
+	padding-left: 30px;
+}

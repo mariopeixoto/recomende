@@ -184,5 +184,9 @@ public class TagSet implements Serializable, Cloneable, Set<Tag> {
 			}
 		}
 	}
+	
+	public Tag getTag(String tag) {
+		return this.tagMap.get(tag);
+	}
 
 }

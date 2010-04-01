@@ -50,13 +50,15 @@ public class AuthController {
 	@RequestMapping(value="/register", method=RequestMethod.POST)
 	public String register(@ModelAttribute User user, @RequestParam("curriculum") MultipartFile curriculum) {
 		try {
-			CurriculumParser curriculumParser = new CurriculumParser();
-			CurriculumVitae curriculumVitae = curriculumParser.parse(curriculum.getInputStream());
-			TagSet profile = this.tagSuggestion.mine(curriculumVitae);
-			user.setProfile(profile);
-		} catch(Exception e) {
+			if (curriculum != null) {
+				CurriculumParser curriculumParser = new CurriculumParser();
+				CurriculumVitae curriculumVitae = curriculumParser.parse(curriculum.getInputStream());
+				TagSet profile = this.tagSuggestion.mine(curriculumVitae);
+				user.setProfile(profile);
+			}
+		} catch(Throwable e) {
 			//FIXME Corrigir tratamento de exception
-			throw new RuntimeException(e);
+			//throw new RuntimeException(e);
 		}
 		user.setRoles(new HashSet<Role>());
 		user.getRoles().add(new Role(Roles.USER));

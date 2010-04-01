@@ -10,6 +10,8 @@ import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.PlatformTransactionManager;
 
+import br.ic.grow.retiblog.tagParser.FragmentalTagParser;
+import br.ic.grow.retriblog.blogCrawler.BlogCrawler;
 import br.recomende.infra.task.Task;
 import br.recomende.model.repository.DocumentRepository;
 import br.recomende.model.repository.HarvesterDefinitionRepository;
@@ -24,18 +26,20 @@ public class HarvestTask implements Task {
 	private DocumentRepository documentRepository;
 	private TaskExecutor taskExecutor;
 	private PlatformTransactionManager transactionManager;
+	private BlogCrawler blogCrawler;
 
 	@Autowired
 	public HarvestTask(HarvesterDefinitionRepository harvesterDefinitionRepository, 
 			HarvesterFactory harvesterFactory,
 			DocumentRepository documentRepository,
 			TaskExecutor taskExecutor,
-			PlatformTransactionManager platformTransactionManager) {
+			PlatformTransactionManager platformTransactionManager, BlogCrawler blogCrawler) {
 		this.harvesterDefinitionRepository = harvesterDefinitionRepository;
 		this.harvesterFactory = harvesterFactory;
 		this.documentRepository = documentRepository;
 		this.taskExecutor = taskExecutor;
 		this.transactionManager = platformTransactionManager;
+		this.blogCrawler = blogCrawler;
 	}
 	
 	@Override
@@ -51,6 +55,11 @@ public class HarvestTask implements Task {
 			this.taskExecutor.execute(command);
 		}
 		log.info("Harvest task finalized");
+	}
+	
+	@Scheduled(cron="0 0 2 * * *")
+	public void startCrawler() {
+		this.blogCrawler.crawlerTag(new FragmentalTagParser());
 	}
 
 }

@@ -8,4 +8,6 @@ public interface ISearcher<T> {
 	
 	T search(User user, Integer quantity, Object... params) throws SearchException;
 
+	T search(Object... params) throws SearchException;
+	
 }

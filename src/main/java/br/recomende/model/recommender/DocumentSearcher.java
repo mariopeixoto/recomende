@@ -2,8 +2,6 @@ package br.recomende.model.recommender;
 
 import java.util.List;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Service;
@@ -24,8 +22,6 @@ public class DocumentSearcher implements ISearcher<DocumentList> {
 	
 	private RecommendationRepository recommendationRepository;
 	
-	private static Logger log = LoggerFactory.getLogger(DocumentSearcher.class);
-	
 	@Autowired
 	public DocumentSearcher(RecommendUtil recommendUtil, RecommendationRepository recommendationRepository) {
 		this.recommendUtil = recommendUtil;
@@ -33,14 +29,9 @@ public class DocumentSearcher implements ISearcher<DocumentList> {
 	}
 	
 	public DocumentList search(User user, Integer quantity, Object... params) throws SearchException {
-		log.info("Init document search for user " + user.getUsername());
 		try {
-			log.info("Searching");
-			DocumentList documents = this.recommendUtil.invokeComponentMethod(Searcher.class, DocumentList.class, params);
-			log.info("Documents founded: " + documents.size());
-			log.info("Looking for documents already recommended");
+			DocumentList documents = this.search(params);
 			List<Recommendation> recommendations = this.recommendationRepository.getByUser(user);
-			log.info("Recommendations founded: " + recommendations.size());
 			for (Recommendation recommendation : recommendations) {
 				int docIndex = documents.contains(recommendation.getDocumentId(), recommendation.getDocumentClass());
 				if (docIndex != -1) {
@@ -48,13 +39,22 @@ public class DocumentSearcher implements ISearcher<DocumentList> {
 				}
 			}
 			if (documents.size() > quantity) {
-				log.info("Croping results to " + quantity);
 				documents = new DocumentList(documents.subList(0, quantity));
 			}
-			log.info("Registering these recommendations");
 			this.recommendationRepository.putByUser(user, documents);
-			log.info("Returning documents");
 			return documents;
+		} catch (SearchException e) {
+			throw e;
+		} catch (Exception e) {
+			throw new SearchException(e);
+		}
+	}
+	
+
+	@Override
+	public DocumentList search(Object... params) throws SearchException {
+		try {
+			return this.recommendUtil.invokeComponentMethod(Searcher.class, DocumentList.class, params);
 		} catch (Exception e) {
 			throw new SearchException(e);
 		}

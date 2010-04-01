@@ -13,13 +13,18 @@
 				$.get("recommend", showContent);
 			}
 		);
+		$("#searchbutton").click(
+				function searchButton() {
+					$.get("searcher", showContent);
+				}
+			);
 		$("#profilebutton").click(
-			function homeButton() {
+			function profileButton() {
 				$.get("profile", showContent);
 			}
 		);
 		$("#signoutbutton").click(
-			function homeButton() {
+			function signoutButton() {
 				location.href = "./signout";
 			}
 		);
@@ -31,7 +36,10 @@
 			<fmt:message key="menu" />
 		</p>
 		<p>
-			<button id="homebutton"><fmt:message key="home" /></button>
+			<button id="homebutton"><fmt:message key="recommend" /></button>
+		</p>
+		<p>
+			<button id="searchbutton"><fmt:message key="search" /></button>
 		</p>
 		<p>
 			<button id="profilebutton"><fmt:message key="profile" /></button>
