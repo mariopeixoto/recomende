@@ -1,5 +1,6 @@
 package br.recomende.infra.persistence.dao;
 
+import java.util.Collection;
 import java.util.List;
 
 import org.apache.lucene.search.Query;
@@ -31,14 +32,14 @@ public class DocumentDao extends RepositoryWrapper<Document, Integer>
 		return (List<ScoredDocument>)fullTextQuery.list();
 	}
 
-	/*@Override
-	public void indexAll() {
+	@Override
+	public void reindex() {
 		FullTextSession session = Search.getFullTextSession(super.getSession());
 		Collection<Document> list = this.list();
 		for (Document document : list) {
 			session.index(document);
 		}
 		session.flushToIndexes();
-	}*/
+	}
 	
 }

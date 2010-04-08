@@ -11,4 +11,6 @@ public interface DocumentRepository extends GenericRepository<Document, Integer>
 	
 	List<ScoredDocument> search(Query query, Class<?> documentClass);
 	
+	void reindex();
+	
 }
