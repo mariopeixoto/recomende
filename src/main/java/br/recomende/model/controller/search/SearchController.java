@@ -54,7 +54,7 @@ public class SearchController {
 		User user = this.getPrincipal();
 		Collection<Document> documents = this.documentSearcher.search(user, 5, user.getProfile(), Document.class);
 		ModelAndView modelAndView = new ModelAndView("search/result");
-		modelAndView.addObject(documents);
+		modelAndView.addObject("documents", documents);
 		return modelAndView;
 	}
 	
