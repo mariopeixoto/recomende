@@ -17,6 +17,8 @@
 			access="IS_AUTHENTICATED_ANONYMOUSLY" />
 		<intercept-url pattern="/register*"
 			access="IS_AUTHENTICATED_ANONYMOUSLY" />
+		<intercept-url pattern="/search*"
+			access="IS_AUTHENTICATED_ANONYMOUSLY" />
 		<intercept-url pattern="/**" access="ROLE_USER" />
 		<form-login login-page='/signin' default-target-url="/home" authentication-failure-url="/signin?error=true"/>
 		<logout logout-url="/signout"/>

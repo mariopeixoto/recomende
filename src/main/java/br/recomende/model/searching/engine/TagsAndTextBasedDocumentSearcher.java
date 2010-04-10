@@ -12,13 +12,13 @@ import br.recomende.model.recommender.api.annotation.BeginMethod;
 import br.recomende.model.recommender.api.annotation.Searcher;
 
 @Searcher
-public class ProfileAndTextBasedDocumentSearcher {
+public class TagsAndTextBasedDocumentSearcher {
 
 	private TagSetMiner tagSetMiner;
 	private DocumentSearcher documentSearcher;
 	
 	@Autowired
-	public ProfileAndTextBasedDocumentSearcher(DocumentSearcher documentSearcher,
+	public TagsAndTextBasedDocumentSearcher(DocumentSearcher documentSearcher,
 			TagSetMiner tagSuggestion) {
 		this.tagSetMiner = tagSuggestion;
 		this.documentSearcher = documentSearcher;

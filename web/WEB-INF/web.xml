@@ -20,7 +20,7 @@
     	<param-value>classpath:spring/applicationContext.xml</param-value>
     </context-param>
     
-    <!-- <filter>
+    <filter>
 		<filter-name>OpenEntityManagerInViewFilter</filter-name>
 		<filter-class>org.springframework.orm.jpa.support.OpenEntityManagerInViewFilter</filter-class>
 	</filter>
@@ -29,8 +29,6 @@
 		<filter-name>OpenEntityManagerInViewFilter</filter-name>
 		<url-pattern>/*</url-pattern>
 	</filter-mapping>
-
-	-->
 		
 	<filter>
         <filter-name>springSecurityFilterChain</filter-name>

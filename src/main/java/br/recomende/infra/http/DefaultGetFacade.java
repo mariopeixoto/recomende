@@ -5,9 +5,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
-import javax.xml.ws.http.HTTPException;
-
 import org.apache.http.HttpEntity;
+import org.apache.http.HttpException;
 import org.apache.http.HttpResponse;
 import org.apache.http.HttpStatus;
 import org.apache.http.NameValuePair;
@@ -35,14 +34,16 @@ public class DefaultGetFacade implements GetFacade {
 		
 		List<NameValuePair> qparams = new ArrayList<NameValuePair>();
 		
-		for (String key : parameters.keySet()) {
-			qparams.add(new BasicNameValuePair(key, parameters.get(key).toString()));
-		}
-		String uri = endPoint+"?"+URLEncodedUtils.format(qparams, "UTF-8");
+		String uri = endPoint;
+		if (parameters != null) {
+			for (String key : parameters.keySet()) {
+				qparams.add(new BasicNameValuePair(key, parameters.get(key).toString()));
+			}
+			uri += "?"+URLEncodedUtils.format(qparams, "UTF-8");
+		} 
 		log.debug("Sending a GET requisition to "+uri);
 		HttpGet httpGet = new HttpGet(uri);
 		
-		//FIXME Fix exception handling here
 		StatusLine status;
 		InputStream stream;
 		try {
@@ -56,7 +57,7 @@ public class DefaultGetFacade implements GetFacade {
 		if (status.getStatusCode() == HttpStatus.SC_OK ) {
 			return stream;
 		} else {
-			throw new HTTPException(status.getStatusCode());
+			throw new RuntimeException(new HttpException(String.valueOf(status.getStatusCode())));
 		}
 	}
 	
