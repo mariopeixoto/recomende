@@ -1,4 +1,4 @@
 RecoMEnde
 =========
 
-A JAVA library for document recommendation
+A Recommendation system for digital libraries
