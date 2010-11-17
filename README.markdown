@@ -1,3 +1,4 @@
-<h3>RecoMEnde</h3>
+RecoMEnde
+=========
 
 A JAVA library for document recommendation
