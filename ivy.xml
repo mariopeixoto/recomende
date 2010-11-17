@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--
+   Licensed to the Apache Software Foundation (ASF) under one
+   or more contributor license agreements.  See the NOTICE file
+   distributed with this work for additional information
+   regarding copyright ownership.  The ASF licenses this file
+   to you under the Apache License, Version 2.0 (the
+   "License"); you may not use this file except in compliance
+   with the License.  You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing,
+   software distributed under the License is distributed on an
+   "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+   KIND, either express or implied.  See the License for the
+   specific language governing permissions and limitations
+   under the License.    
+-->
+<ivy-module version="2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="http://ant.apache.org/ivy/schemas/ivy.xsd">
+    <info organisation="br.ufal" module="recomende" status="release" />
+    
+    <configurations>
+    	<conf name="compile"/>
+    	<conf name="test" extends="compile"/>
+    </configurations>
+    
+    <dependencies>
+    	<dependency org="postgresql" name="postgresql" rev="9.0-801.jdbc4" conf="compile->default"/>
+        <dependency org="org.springframework" name="spring-webmvc" rev="3.0.5.RELEASE" conf="compile->default" />
+        <dependency org="org.springframework" name="spring-orm" rev="3.0.5.RELEASE" conf="compile->default" />
+        <dependency org="org.hibernate" name="hibernate" rev="3.2.7.ga" conf="compile->default" />
+        <dependency org="org.hibernate" name="hibernate-annotations" rev="3.4.0.GA" conf="compile->default" />
+        <dependency org="org.hibernate" name="hibernate-search" rev="3.1.0.GA" conf="compile->default"/>
+        <dependency org="org.hibernate" name="hibernate-validator" rev="3.1.0.GA" conf="compile->default"/>
+        <dependency org="org.hibernate" name="hibernate-entitymanager" rev="3.4.0.GA" conf="compile->default"/>
+        <dependency org="org.apache.httpcomponents" name="httpclient" rev="4.0" conf="compile->default"/>
+        <dependency org="org.apache.lucene" name="lucene-analyzers" rev="2.4.0" conf="compile->default"/>
+        <dependency org="taglibs" name="standard" rev="1.1.2" conf="compile->default"/>
+        <dependency org="jstl" name="jstl" rev="1.1.2" conf="compile->default"/>
+        <dependency org="commons-beanutils" name="commons-beanutils" rev="1.8.3" conf="compile->default"/>
+ 	<dependency org="commons-digester" name="commons-digester" rev="2.1" conf="compile->default"/>
+ 	<dependency org="commons-fileupload" name="commons-fileupload" rev="1.1" conf="compile->default"/>
+ 	<dependency org="org.springframework.security" name="spring-security-core" rev="3.0.4.RELEASE" conf="compile->default"/>
+ 	<dependency org="org.springframework.security" name="spring-security-config" rev="3.0.4.RELEASE" conf="compile->default"/>
+ 	<dependency org="org.springframework.security" name="spring-security-web" rev="3.0.4.RELEASE" conf="compile->default"/>
+ 	<dependency org="org.reflections" name="reflections" rev="0.9.5-RC2" conf="compile->default"/>
+ 	<dependency org="javax.transaction" name="jta" rev="1.1" conf="compile->default"/>
+ 	<dependency org="log4j" name="log4j" rev="1.2.16" conf="compile->default"/>
+ 	<dependency org="org.slf4j" name="slf4j-api" rev="1.6.1" conf="compile->default"/>
+ 	<dependency org="org.slf4j" name="slf4j-log4j12" rev="1.6.1" conf="compile->default"/>
+ 	<dependency org="org.slf4j" name="jcl-over-slf4j" rev="1.6.1" conf="compile->default"/>
+ 	<dependency org="org.slf4j" name="log4j-over-slf4j" rev="1.6.1" conf="compile->default"/>
+ 	<dependency org="org.tuckey" name="urlrewritefilter" rev="3.1.0" conf="compile->default"/>
+       	<exclude org="commons-logging" artifact="commons-logging"/>
+        <exclude org="ch.qos.logback" artifact="logback-classic"/>
+        <exclude org="ch.qos.logback" artifact="logback-core"/>
+    </dependencies>
+</ivy-module>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:ivy="antlib:org.apache.ivy.ant" name="sample"
+	default="resolve">
+	
+	<target name="clean">
+		<delete>
+			<fileset dir="web/WEB-INF/lib" includes="**/*"/>
+		</delete>
+	</target>
+
+	<target name="resolve">
+		<ivy:configure file="ivysettings.xml" />
+		<ivy:resolve file="ivy.xml" conf="compile" />
+	</target>
+
+	<target name="retrieve" depends="resolve,clean">
+		
+		<ivy:retrieve pattern="web/WEB-INF/lib/[artifact]-[revision].[ext]"
+			conf="*" />
+	</target>
+</project>
