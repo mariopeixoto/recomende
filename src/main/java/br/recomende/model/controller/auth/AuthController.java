@@ -18,19 +18,21 @@ import br.recomende.infra.user.User;
 import br.recomende.infra.util.SHA1;
 import br.recomende.model.curriculum.CurriculumVitae;
 import br.recomende.model.curriculum.parser.CurriculumParser;
-import br.recomende.model.profile.TagSet;
-import br.recomende.model.recommender.TagSetMiner;
+import br.recomende.model.entity.Profile;
+import br.recomende.model.recommender.api.IMiner;
+import br.recomende.model.recommender.api.Tag;
+import br.recomende.model.recommender.api.TagMap;
 import br.recomende.model.repository.UserRepository;
 
 @Controller
 public class AuthController {
 	
-	private TagSetMiner tagSuggestion;
+	private IMiner miner;
 	private UserRepository userRepository;
 	
 	@Autowired
-	public AuthController(TagSetMiner tagSuggestion, UserRepository userRepository) {
-		this.tagSuggestion = tagSuggestion;
+	public AuthController(IMiner miner, UserRepository userRepository) {
+		this.miner = miner;
 		this.userRepository = userRepository;
 	}
 	
@@ -53,12 +55,12 @@ public class AuthController {
 			if (curriculum != null) {
 				CurriculumParser curriculumParser = new CurriculumParser();
 				CurriculumVitae curriculumVitae = curriculumParser.parse(curriculum.getInputStream());
-				TagSet profile = this.tagSuggestion.mine(curriculumVitae);
-				user.setProfile(profile);
+				Profile profile = (Profile) this.miner.mine(Profile.class, curriculumVitae);
+				user.setUserProfile(profile);
 			}
 		} catch(Throwable e) {
 			//FIXME Corrigir tratamento de exception
-			//throw new RuntimeException(e);
+			throw new RuntimeException(e);
 		}
 		user.setRoles(new HashSet<Role>());
 		user.getRoles().add(new Role(Roles.USER));

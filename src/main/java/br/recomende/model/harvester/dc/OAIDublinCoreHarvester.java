@@ -13,8 +13,8 @@ import org.springframework.stereotype.Component;
 import br.recomende.infra.http.GetFacade;
 import br.recomende.infra.util.DateConversionHelper;
 import br.recomende.infra.util.SpringScope;
-import br.recomende.model.document.DocumentHarvester;
-import br.recomende.model.document.DublinCoreDocument;
+import br.recomende.model.entity.DocumentHarvester;
+import br.recomende.model.entity.DublinCoreDocument;
 import br.recomende.model.harvester.HarvesterDefinition;
 import br.recomende.model.harvester.dc.parser.OAIListRecordsParser;
 

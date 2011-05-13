@@ -11,7 +11,7 @@ import org.springframework.stereotype.Component;
 import org.xml.sax.SAXException;
 
 import br.recomende.infra.util.SpringScope;
-import br.recomende.model.document.DublinCoreDocument;
+import br.recomende.model.entity.DublinCoreDocument;
 import br.recomende.model.harvester.HarvesterDefinition;
 
 @Component
@@ -36,7 +36,6 @@ public class OAIListRecordsParser {
 		this.digester.addBeanPropertySetter("*/ListRecords/record/metadata/dc/publisher");
 		this.digester.addBeanPropertySetter("*/ListRecords/record/metadata/dc/contributor");
 		this.digester.addBeanPropertySetter("*/ListRecords/record/metadata/dc/date");
-		this.digester.addBeanPropertySetter("*/ListRecords/record/metadata/dc/type");
 		this.digester.addBeanPropertySetter("*/ListRecords/record/metadata/dc/format");
 		this.digester.addBeanPropertySetter("*/ListRecords/record/metadata/dc/identifier");
 		this.digester.addBeanPropertySetter("*/ListRecords/record/metadata/dc/source");

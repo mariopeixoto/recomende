@@ -16,7 +16,7 @@
 			<property name="hibernate.search.default.indexBase" value="/Users/mario/recomende/indexes"/>
 		
 			<!-- Debug Configuration -->
-			<property name="hibernate.show_sql" value="true"/>
+			<property name="hibernate.show_sql" value="false"/>
 			<!--<property name="format_sql" value="true"/>-->
 			<property name="hibernate.use_sql_comments" value="true"/>
 		</properties>

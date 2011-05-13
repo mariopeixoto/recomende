@@ -6,7 +6,7 @@ import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 import br.recomende.infra.util.SpringScope;
-import br.recomende.model.document.DocumentHarvester;
+import br.recomende.model.entity.DocumentHarvester;
 
 @Component
 @Scope(SpringScope.APPLICATION)

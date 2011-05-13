@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.servlet.ModelAndView;
 
-import br.recomende.model.document.DocumentHarvester;
+import br.recomende.model.entity.DocumentHarvester;
 import br.recomende.model.harvester.HarvesterDefinition;
 import br.recomende.model.harvester.HarvesterType;
 import br.recomende.model.repository.HarvesterDefinitionRepository;

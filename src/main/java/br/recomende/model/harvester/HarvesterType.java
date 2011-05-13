@@ -3,7 +3,7 @@ package br.recomende.model.harvester;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
-import br.recomende.model.document.DocumentHarvester;
+import br.recomende.model.entity.DocumentHarvester;
 
 @Entity
 public class HarvesterType {

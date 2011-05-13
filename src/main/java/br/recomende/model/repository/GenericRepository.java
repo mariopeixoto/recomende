@@ -11,5 +11,6 @@ public interface GenericRepository <Type, PK extends Serializable> {
 	Type get(PK identifier);
 	Collection<Type> list();
 	long size();
+	Object getDelegate();
 	
 }

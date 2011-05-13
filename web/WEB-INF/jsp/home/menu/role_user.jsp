@@ -39,9 +39,6 @@
 			<button id="homebutton"><fmt:message key="recommend" /></button>
 		</p>
 		<p>
-			<button id="searchbutton"><fmt:message key="search" /></button>
-		</p>
-		<p>
 			<button id="profilebutton"><fmt:message key="profile" /></button>
 		</p>
 		<p>

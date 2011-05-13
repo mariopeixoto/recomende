@@ -8,9 +8,5 @@ import br.recomende.model.repository.HarvesterTypeRepository;
 @Repository
 public class HarvesterTypeDao extends RepositoryWrapper<HarvesterType, String>
 		implements HarvesterTypeRepository {
-	
-	public HarvesterTypeDao() {
-		super(HarvesterType.class);
-	}
 
 }

@@ -28,10 +28,5 @@
                 <priority value="INFO" />
                 <appender-ref ref="stdout" />
         </category>
-        
-        <category name="org.reflections">
-                <priority value="INFO" />
-                <appender-ref ref="stdout" />
-        </category>
 
 </log4j:configuration>

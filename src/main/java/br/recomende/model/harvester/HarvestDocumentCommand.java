@@ -10,10 +10,10 @@ import org.springframework.transaction.TransactionDefinition;
 import org.springframework.transaction.TransactionStatus;
 import org.springframework.transaction.support.DefaultTransactionDefinition;
 
-import br.recomende.model.document.Document;
-import br.recomende.model.document.DocumentHarvester;
-import br.recomende.model.repository.DocumentRepository;
+import br.recomende.model.entity.DocumentHarvester;
+import br.recomende.model.recommender.api.Recommendable;
 import br.recomende.model.repository.HarvesterDefinitionRepository;
+import br.recomende.model.repository.RecommendableRepository;
 
 public class HarvestDocumentCommand implements Runnable {
 	
@@ -22,18 +22,18 @@ public class HarvestDocumentCommand implements Runnable {
 	private final HarvesterDefinition harvesterDefinition;
 	private final HarvesterDefinitionRepository harvesterDefinitionRepository;
 	private final HarvesterFactory harvesterFactory;
-	private final DocumentRepository documentRepository;
+	private final RecommendableRepository recommendableRepository;
 	private final PlatformTransactionManager transactionManager;
 	
 	public HarvestDocumentCommand(final HarvesterDefinition harvesterDefinition, 
 			final HarvesterDefinitionRepository harvesterDefinitionRepository,
 			final HarvesterFactory harvesterFactory,
-			final DocumentRepository documentRepository,
+			final RecommendableRepository recommendableRepository,
 			final PlatformTransactionManager transactionManager) {
 		this.harvesterDefinition = harvesterDefinition;
 		this.harvesterDefinitionRepository = harvesterDefinitionRepository;
 		this.harvesterFactory = harvesterFactory;
-		this.documentRepository = documentRepository;
+		this.recommendableRepository = recommendableRepository;
 		this.transactionManager = transactionManager;
 	}
 
@@ -41,15 +41,15 @@ public class HarvestDocumentCommand implements Runnable {
 	public void run() {
 		log.info("Harvesting "+harvesterDefinition.getName()+", which last harvest on "+harvesterDefinition.getLastHarvest());
 		DocumentHarvester harvester = harvesterFactory.instanceFor(harvesterDefinition);
-		List<? extends Document> documents = harvester.harvest();
+		List<? extends Recommendable> documents = harvester.harvest();
 		log.info(documents.size() + " documents harvested");
 		DefaultTransactionDefinition transactionDefinition = new DefaultTransactionDefinition(TransactionDefinition.PROPAGATION_REQUIRES_NEW);
 		transactionDefinition.setReadOnly(false);
 		transactionDefinition.setName(harvesterDefinition.getName());
 		TransactionStatus transaction = transactionManager.getTransaction(transactionDefinition);
 		try {
-			for (Document document : documents) {
-				this.documentRepository.put(document);
+			for (Recommendable document : documents) {
+				this.recommendableRepository.put(document);
 			}
 			if (documents.size() > 0) {
 				log.info(documents.size() + " successfully added to repository and indexed");

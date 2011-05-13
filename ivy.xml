@@ -31,9 +31,9 @@
         <dependency org="org.springframework" name="spring-webmvc" rev="3.0.5.RELEASE" conf="compile->default" />
         <dependency org="org.springframework" name="spring-orm" rev="3.0.5.RELEASE" conf="compile->default" />
         <dependency org="org.hibernate" name="hibernate" rev="3.2.7.ga" conf="compile->default" />
-        <dependency org="org.hibernate" name="hibernate-annotations" rev="3.4.0.GA" conf="compile->default" />
+        <dependency org="org.hibernate" name="hibernate-annotations" rev="3.2.1.ga" conf="compile->default" />
         <dependency org="org.hibernate" name="hibernate-search" rev="3.1.0.GA" conf="compile->default"/>
-        <dependency org="org.hibernate" name="hibernate-validator" rev="3.1.0.GA" conf="compile->default"/>
+        <dependency org="org.hibernate" name="hibernate-validator" rev="3.0.0.ga" conf="compile->default"/>
         <dependency org="org.hibernate" name="hibernate-entitymanager" rev="3.4.0.GA" conf="compile->default"/>
         <dependency org="org.apache.httpcomponents" name="httpclient" rev="4.0" conf="compile->default"/>
         <dependency org="org.apache.lucene" name="lucene-analyzers" rev="2.4.0" conf="compile->default"/>

@@ -3,6 +3,8 @@ package br.recomende.infra.persistence.dao;
 import java.io.Serializable;
 import java.util.Collection;
 
+import org.hibernate.Session;
+
 public interface GenericDao <Type, PK extends Serializable> {
 
 	Type persist(Type object);
@@ -11,5 +13,6 @@ public interface GenericDao <Type, PK extends Serializable> {
 	Type findByPK(PK identifier);
 	Collection<Type> listAll();
 	long count();
+	Session getSession();
 	
 }

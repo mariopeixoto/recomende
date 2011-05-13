@@ -1,5 +1,6 @@
 package br.recomende.model.controller.profile;
 
+import org.hibernate.Session;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.security.core.context.SecurityContextHolder;
@@ -14,8 +15,7 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.servlet.ModelAndView;
 
 import br.recomende.infra.user.User;
-import br.recomende.model.profile.Tag;
-import br.recomende.model.profile.TagSet;
+import br.recomende.model.entity.Profile;
 import br.recomende.model.repository.UserRepository;
 
 @Controller
@@ -32,7 +32,7 @@ public class ProfileController {
 	@RequestMapping(method=RequestMethod.GET)
 	public ModelAndView get() {
 		User user = this.getPrincipal();
-		TagSet profile = user.getProfile();
+		Profile profile = user.getUserProfile();
 		ModelAndView modelAndView = new ModelAndView("profile/get");
 		modelAndView.addObject("elements", profile);
 		return modelAndView;
@@ -43,7 +43,7 @@ public class ProfileController {
 	public void edit(@PathVariable String term, @RequestBody final MultiValueMap<String, String> params) {
 		User user = this.getPrincipal();
 		Double weight = Double.parseDouble(params.getFirst("weight"));
-		user.getProfile().edit(new Tag(term, weight));
+		user.getProfile().put(term, weight);
 		this.userRepository.put(user);
 		
 	}
@@ -52,14 +52,14 @@ public class ProfileController {
 	@ResponseStatus(HttpStatus.OK)
 	public void remove(@PathVariable String term) {
 		User user = this.getPrincipal();
-		user.getProfile().remove(new Tag(term));
+		user.getProfile().remove(term);
 		this.userRepository.put(user);
 	}
 	
 	@RequestMapping(method=RequestMethod.POST)
 	public ModelAndView add(@RequestParam String term, @RequestParam Double weight) {
 		User user = this.getPrincipal();
-		user.getProfile().add(new Tag(term, weight));
+		user.getProfile().put(term, weight);
 		this.userRepository.put(user);
 		ModelAndView modelAndView = new ModelAndView("profile/post");
 		modelAndView.addObject("term", term);
@@ -68,7 +68,8 @@ public class ProfileController {
 	}
 	
 	private User getPrincipal() {
-		return (User) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+		Session session = (Session) this.userRepository.getDelegate();
+		return (User) session.merge(SecurityContextHolder.getContext().getAuthentication().getPrincipal());
 	}
 	
 }

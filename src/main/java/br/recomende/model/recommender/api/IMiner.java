@@ -1,8 +1,10 @@
 package br.recomende.model.recommender.api;
 
 
-public interface IMiner<T> {
+
+public interface IMiner {
 	
-	T mine(Object... params) throws MineException;
+	@SuppressWarnings("rawtypes")
+	TagMap mine(Class<? extends TagMap> tagSetImplClass, Object... params) throws MineException;
 
 }

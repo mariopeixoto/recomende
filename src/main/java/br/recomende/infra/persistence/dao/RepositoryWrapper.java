@@ -7,10 +7,6 @@ import br.recomende.model.repository.GenericRepository;
 
 public class RepositoryWrapper<Type,PK extends Serializable> extends GenericHibernateDao<Type, PK> implements GenericRepository<Type, PK> {
 
-	public RepositoryWrapper(Class<?> clazz) {
-		super(clazz);
-	}
-	
 	public Type get(PK identifier) {
 		return this.findByPK(identifier);
 	}
@@ -33,6 +29,11 @@ public class RepositoryWrapper<Type,PK extends Serializable> extends GenericHibe
 
 	public void remove(PK identifier) {
 		this.delete(identifier);
+	}
+
+	@Override
+	public Object getDelegate() {
+		return this.getSession();
 	}
 	
 }

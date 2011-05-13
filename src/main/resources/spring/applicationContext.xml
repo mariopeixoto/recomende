@@ -19,6 +19,12 @@
 	<!-- Scans this application for @Components to deploy as beans -->
 	<context:component-scan base-package="br" />
 	
+	<bean id="indexPackage" class="java.lang.String">
+		<constructor-arg>
+			<value>br.recomende</value>
+		</constructor-arg>		
+	</bean>
+	
 	<!-- Application Message Bundle -->
 	<bean id="messageSource"
 		class="org.springframework.context.support.ReloadableResourceBundleMessageSource">

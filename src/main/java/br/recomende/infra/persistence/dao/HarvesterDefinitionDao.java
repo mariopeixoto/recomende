@@ -11,9 +11,5 @@ import br.recomende.model.repository.HarvesterDefinitionRepository;
 @Scope(SpringScope.PROTOTYPE)
 public class HarvesterDefinitionDao extends RepositoryWrapper<HarvesterDefinition, Integer> 
 						implements HarvesterDefinitionRepository {
-
-	public HarvesterDefinitionDao() {
-		super(HarvesterDefinition.class);
-	}
 	
 }

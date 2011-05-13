@@ -2,20 +2,28 @@ package br.recomende.infra.user;
 
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.List;
+import java.util.Map;
 import java.util.Set;
 
-import javax.persistence.Embedded;
+import javax.persistence.CascadeType;
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.JoinTable;
 import javax.persistence.OneToMany;
 import javax.persistence.OrderBy;
 import javax.persistence.Table;
 
+import org.hibernate.annotations.CollectionOfElements;
+import org.hibernate.annotations.MapKey;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
 import br.recomende.infra.util.SHA1;
-import br.recomende.model.profile.TagSet;
+import br.recomende.model.entity.Profile;
+import br.recomende.model.entity.Recommendation;
 
 @Entity
 @Table(name="users")
@@ -34,8 +42,14 @@ public class User implements UserDetails {
 	@OrderBy("authority")
 	private Set<Role> roles;
 	
-	@Embedded
-	private TagSet profile;
+	@CollectionOfElements
+	@JoinTable(name = "users_tag",
+	joinColumns = @JoinColumn(name = "username"))
+	@MapKey(columns = {@Column(name = "tag")})
+	private Map<String, Double> profile;
+	
+	@OneToMany(cascade = CascadeType.ALL, mappedBy = "user")
+	private List<Recommendation> recommendations;
 	
 	private String firstName;
 	
@@ -46,7 +60,6 @@ public class User implements UserDetails {
 	private String email;
 
 	public User() {
-		this.profile = new TagSet();
 	}
 	
 	public User(String username, String password, Boolean active, Set<Role> roles) {
@@ -56,6 +69,14 @@ public class User implements UserDetails {
 		this.roles = roles;
 	}
 	
+	public List<Recommendation> getRecommendations() {
+		return recommendations;
+	}
+
+	public void setRecommendations(List<Recommendation> recommendations) {
+		this.recommendations = recommendations;
+	}
+
 	@Override
 	public Collection<GrantedAuthority> getAuthorities() {
 		return new ArrayList<GrantedAuthority>(roles);
@@ -91,12 +112,20 @@ public class User implements UserDetails {
 		return this.active;
 	}
 
-	public TagSet getProfile() {
+	public Map<String, Double> getProfile() {
 		return profile;
 	}
 
-	public void setProfile(TagSet profile) {
+	public void setProfile(Map<String, Double> profile) {
 		this.profile = profile;
+	}
+	
+	public Profile getUserProfile() {
+		return new Profile(this.profile);
+	}
+
+	public void setUserProfile(Profile profile) {
+		this.profile = profile.getMap();
 	}
 
 	public Boolean getActive() {

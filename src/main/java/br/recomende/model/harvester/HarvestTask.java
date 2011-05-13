@@ -11,8 +11,8 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.PlatformTransactionManager;
 
 import br.recomende.infra.task.Task;
-import br.recomende.model.repository.DocumentRepository;
 import br.recomende.model.repository.HarvesterDefinitionRepository;
+import br.recomende.model.repository.RecommendableRepository;
 
 @Service
 public class HarvestTask implements Task {
@@ -21,32 +21,32 @@ public class HarvestTask implements Task {
 	
 	private HarvesterDefinitionRepository harvesterDefinitionRepository;
 	private HarvesterFactory harvesterFactory;
-	private DocumentRepository documentRepository;
+	private RecommendableRepository recommendableRepository;
 	private TaskExecutor taskExecutor;
 	private PlatformTransactionManager transactionManager;
 
 	@Autowired
 	public HarvestTask(HarvesterDefinitionRepository harvesterDefinitionRepository, 
 			HarvesterFactory harvesterFactory,
-			DocumentRepository documentRepository,
+			RecommendableRepository recommendableRepository,
 			TaskExecutor taskExecutor,
 			PlatformTransactionManager platformTransactionManager) {
 		this.harvesterDefinitionRepository = harvesterDefinitionRepository;
 		this.harvesterFactory = harvesterFactory;
-		this.documentRepository = documentRepository;
+		this.recommendableRepository = recommendableRepository;
 		this.taskExecutor = taskExecutor;
 		this.transactionManager = platformTransactionManager;
 	}
 	
 	@Override
-	@Scheduled(cron="0 0 2 * * *")
-	//@Scheduled(fixedDelay=5000000)
+	//@Scheduled(cron="0 0 2 * * *")
+	@Scheduled(fixedDelay=5000000)
 	public void run() {
 		log.info("Initializing harvest task");
 		Collection<HarvesterDefinition> harvesterDefinitions = this.harvesterDefinitionRepository.list();
 		for (HarvesterDefinition harvesterDefinition : harvesterDefinitions) {
 			HarvestDocumentCommand command = new HarvestDocumentCommand(harvesterDefinition, 
-					this.harvesterDefinitionRepository, this.harvesterFactory, this.documentRepository,
+					this.harvesterDefinitionRepository, this.harvesterFactory, this.recommendableRepository,
 					this.transactionManager);
 			this.taskExecutor.execute(command);
 		}

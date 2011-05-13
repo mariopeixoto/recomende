@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns:ivy="antlib:org.apache.ivy.ant" name="sample"
+<project xmlns:ivy="antlib:org.apache.ivy.ant" name="recomende"
 	default="resolve">
 	
 	<target name="clean">
@@ -17,5 +17,8 @@
 		
 		<ivy:retrieve pattern="web/WEB-INF/lib/[artifact]-[revision].[ext]"
 			conf="*" />
+		<copy todir="web/WEB-INF/lib/">
+			<fileset dir="lib" />
+		</copy>
 	</target>
 </project>

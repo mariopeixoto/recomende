@@ -1,6 +1,7 @@
 package br.recomende.infra.persistence.dao;
 
 import java.io.Serializable;
+import java.lang.reflect.ParameterizedType;
 import java.util.Collection;
 
 import javax.persistence.EntityManager;
@@ -20,14 +21,13 @@ public class GenericHibernateDao<Type,PK extends Serializable> implements Generi
 	@PersistenceContext
 	private EntityManager entityManager;
 
-	private Class<?> objClass;
-	
-	public GenericHibernateDao(Class<?> clazz) {
-		this.objClass = clazz;
+	@SuppressWarnings("unchecked")
+	public Class<Type> getEntityClass() {
+		return (Class<Type>) ((ParameterizedType) getClass().getGenericSuperclass()).getActualTypeArguments()[0];
 	}
 	
 	public long count() {
-		Criteria criteria = getSession().createCriteria(this.objClass).setProjection(Projections.rowCount());
+		Criteria criteria = getSession().createCriteria(getEntityClass()).setProjection(Projections.rowCount());
 		return (Long) criteria.uniqueResult();
 	}
 
@@ -46,7 +46,7 @@ public class GenericHibernateDao<Type,PK extends Serializable> implements Generi
 	@SuppressWarnings("unchecked")
 	public Type findByPK(PK identifier) {
 		try {
-			return (Type) getSession().get(this.objClass, identifier);
+			return (Type) getSession().get(getEntityClass(), identifier);
 		} catch (ObjectNotFoundException e) {
 			return null;
 		}
@@ -54,7 +54,7 @@ public class GenericHibernateDao<Type,PK extends Serializable> implements Generi
 
 	@SuppressWarnings("unchecked")
 	public Collection<Type> listAll() {
-		Criteria criteria = getSession().createCriteria(this.objClass);
+		Criteria criteria = getSession().createCriteria(getEntityClass());
 		return criteria.list();
 	}
 
@@ -64,7 +64,8 @@ public class GenericHibernateDao<Type,PK extends Serializable> implements Generi
 		return object;
 	}
 	
-	protected Session getSession() {
+	@Override
+	public Session getSession() {
 		return (Session) this.entityManager.getDelegate();
 	}
 	
